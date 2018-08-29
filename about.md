@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
 I'm Akinwale Alexander, I'm a software developer.
