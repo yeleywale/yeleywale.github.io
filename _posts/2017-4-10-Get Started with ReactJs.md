@@ -4,10 +4,9 @@ Folks at Facebook describes ReactJs as a UI library for creating high performant
 
 Let me add this:
 
-```
-React is a UI rendering and eventing library for creating UIs from the bottom-up by composing parts in a declaration and functional way.
+> React is a UI rendering and eventing library for creating UIs from the bottom-up by composing parts in a declaration and functional way.
 
-```
+
 ## Virtual DOM
 Unlike other libraries that interact directly with the DOM, React got a little bit fancier by abstracting away the DOM, thereby giving it the leverage to perform whatever magic with the model before it get translated to DOM elements. 
 
