@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm Akinwale Alexander, I'm a software developer.
 
 ### More Information
 
