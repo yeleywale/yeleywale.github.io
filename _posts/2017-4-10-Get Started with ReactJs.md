@@ -10,11 +10,11 @@ Let me add this:
 ## Virtual DOM
 Unlike other libraries that interact directly with the DOM, React got a little bit smarter by abstracting away the DOM, thereby giving it the power to perform whatever magic with the application state before it gets translated to DOM elements. 
 
-Pure sorcery you would say! The virtual DOM is just a fancy name for a Javascript object representing your real object. It's at the center of react's philosophy and architecture, without it there may not be a better way to write performant client-side apps. 
+Pure sorcery you would say! The virtual DOM is just a fancy name for a Javascript object representing your real object. It's at the center of react's philosophy and architecture, without it there may not be a better way to write performant client-side web apps. 
 
 If you are familiar with robust system design, you would appreciate what good abstractions do afford you, and even more so when you have a complex system like the Document Object Model where updation, insertion, deletion and the rest are expensive. 
 
-A good analogy to this is the object relational mapper(ORM) which provides a way for developers to code in their domain and have it converted automatically to database models without having to understand much about SQL, or database query language. Reacts maps changes between the model &mdash; this time a representation of the U.I state &mdash; and the DOM model.
+A good analogy to this is the object relational mapper(ORM) which provides a way for developers to code in their domain and have it converted automatically to database models without having to understand much about SQL, or database query language. React maps changes between the model &mdash; this time a representation of the U.I state &mdash; and the DOM model.
 
 ## Functional and Declarative
 
