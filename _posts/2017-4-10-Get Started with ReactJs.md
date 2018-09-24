@@ -1,10 +1,11 @@
-## What is ReactJs
+## What is React.js
 
 Facebook describes ReactJs as a UI library for creating high performant web and native application. 
 
 Let me add this:
 
 > React is a UI rendering and eventing library for creating UIs from the bottom-up by composing parts in a declarative and functional way.
+
 
 
 ## Virtual DOM
