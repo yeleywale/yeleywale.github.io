@@ -3,7 +3,7 @@
 // VARIABLES
 //
 @font-face {
-  font-family: 'Hoefler';
+  font-family: 'Whitney-medium';
   src: url('./Whitney-Medium.ttf') format('truetype');
 }
 
@@ -20,7 +20,7 @@ $white: #fff;
 $mainbg:  linear-gradient(to bottom, #EEE 0%, #FFF 10%, #FFF 90%, #EEE 100%);
 
 // Font stacks
-$hoefler: Hoefler, "Helvetica Neue", sans-serif;
+$whitney-medium: Whitney-medium, "Helvetica Neue", sans-serif;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
