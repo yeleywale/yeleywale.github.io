@@ -246,10 +246,14 @@ nav {
     li {
       padding: 0.8em;
       border-bottom: 1px solid $darkerGray;
-      border-top: 1px solid $darkerGray;
       list-style-type: none;
-      margin-top: 4px;
       text-align: justify;
+      &:first-child {
+        border-top: 1px solid $darkerGray;
+      }
+      .datelist {
+        float: right;
+      }
 
     }
   } 
