@@ -7,7 +7,7 @@ layout: default
     {% for post in site.posts %}
     <a href="{{ site.baseurl }}{{ post.url }}">
         <li>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <strong>{{ post.title }}</strong>
             <span style="text-align: right">{{ post.date | date: "%B %e, %Y" }}</span>
         </li>
     </a>
