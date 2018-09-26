@@ -3,15 +3,12 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 
-      <ul>
-        <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>          
-        </li>
-      </ul>
-
-    </article>
-  {% endfor %}
 </div>
