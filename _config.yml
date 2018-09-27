@@ -11,6 +11,8 @@ description: Software developer blogging about C#, ASP.NET, Xamarin, Scala, and 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/2574957?s=400&u=12bb8593d157fba19756289afed6f72ed2b829bf&v=4
 
+ github: [metadata]
+
 #
 # Flags below are optional
 #
@@ -18,12 +20,12 @@ avatar: https://avatars0.githubusercontent.com/u/2574957?s=400&u=12bb8593d157fba
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: waleander@gmail.com
   facebook:
   flickr:
   github: waleander
   instagram:
-  linkedin:
+  linkedin: 
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: yeleywaley
@@ -62,6 +64,7 @@ version: v1.2.0
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
+  math_engine: mathjax
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -73,9 +76,10 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-seo-tag
 
 encoding: utf-8
 

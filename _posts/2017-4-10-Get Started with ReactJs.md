@@ -1,3 +1,8 @@
+---
+category: Dev
+tags: React.js, Web 
+---
+
 ## What is React.js
 
 Facebook describes ReactJs as a UI library for creating high performant web and native application. 
