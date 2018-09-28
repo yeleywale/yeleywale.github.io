@@ -20,7 +20,7 @@ layout: default
   
   <ul>
     {% for post in site.posts %}
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a href="{{ site.baseurl }}{{ post.url }}" class="post-list">
         <li>
             <strong>{{ post.title }}</strong>
             <span class="datelist">{{ post.date | date: "%B %e, %Y" }}</span>

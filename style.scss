@@ -243,20 +243,26 @@ nav {
 .posts {
   ul {
     a {
-       &:hover {
-         background: $darkerGray;
-         color: &whitesmoke;
-       }
+       
       li {
-        padding: 0.8em;
-        border-bottom: 1px solid $darkerGray;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid $darkerGray;
         list-style-type: none;
         text-align: justify;
-        &:first-child {
-          border-top: 1px solid $darkerGray;
+      }
+        &:hover {
+          background: $darkerGray;
+          color: &whitesmoke;
+          text-decoration: none;
+          text-indent: 10px;
+        }
+        &:last-child {
+          border-bottom: 1px solid $darkerGray;
         }
         .datelist {
           float: right;
+          color: $gray;
         }
         
       }
