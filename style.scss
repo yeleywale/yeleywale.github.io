@@ -242,16 +242,16 @@ nav {
 
 .posts {
   ul {
-    a {       
+    a { 
+      text-decoration: none;      
       li {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-top: 0.8px 0px 0.8px 0px;
         border-top: 1px solid $darkerGray;
         list-style-type: none;
         text-align: justify;
         &:hover {
           background: $darkerGray;
-          color: &whitesmoke;
+          color: whitesmoke;
           text-decoration: none;
           text-indent: 10px;
         }
