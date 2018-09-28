@@ -195,12 +195,15 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
   cursor: pointer;
   font-family: $whitney-medium;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  padding-left: 30px;
+  a {
+    color: $darkGray;    
+  }
 }
 
 .site-description {
@@ -232,17 +235,11 @@ nav {
   
 }
 
-a.navb {
-  margin-left: 20px;
-  color: $darkGray;
-  text-align: right;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
 .navb a {
   float: right;
   padding: 10px;
+  color: $darkGray;
+  font-family: $whitney-medium;
 }
 
 //
