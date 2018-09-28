@@ -13,7 +13,7 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  {% if site.tags != "No Tags" %}
+  {% if page.tags != "" %}
     {% include tags.html %}
   {% endif %}
 
