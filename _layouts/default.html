@@ -39,6 +39,21 @@
     </div>
   </div>
 
+  <div class="tags">
+    <div>Tags</div>
+    {% comment %}
+    =======================
+    The purpose of this snippet is to list all the tags you have in your site.
+    =======================
+    {% endcomment %}
+    {% if post.tags %} | 
+      {% for tag in post.tags %}
+      <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+      {% endfor %}
+      {% endif %}
+  
+  </div>
+
   <div id="main" role="main" class="container">
     {{ content }}
   </div>
