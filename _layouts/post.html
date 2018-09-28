@@ -13,5 +13,9 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+  {% if site.tags != "" %}
+    {% include tags.html %}
+  {% endif %}
+
   {% include disqus.html %}
 </article>
