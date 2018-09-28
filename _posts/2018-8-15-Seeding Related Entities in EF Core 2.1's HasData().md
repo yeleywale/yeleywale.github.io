@@ -208,4 +208,5 @@ migrationBuilder.InsertData(
     table: "Toy",
     columns: new[] { "Id", "Description", "Name", "OwnerId" },
     values: new object[] { 1, null, "Tonka Truck", 1 });
-    {% endhighlight %}
+
+{% endhighlight %}
