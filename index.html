@@ -4,8 +4,8 @@ layout: default
 
 <div class="tags">
   <div>Tags</div>
-  {% for tag in tags %}
-	  <a href="#{{ tag | slugify }}"> {{ tag }} </a>
+  {% for tag in site.data.tags %}
+	  <a href="#{{ tag | slugify }}"> {{ tag.name }} </a>
   {% endfor %}
 
 </div>
