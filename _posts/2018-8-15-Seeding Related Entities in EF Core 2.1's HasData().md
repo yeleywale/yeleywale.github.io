@@ -1,3 +1,7 @@
+---
+tags: C# EfCore 
+---
+
 ## Brief Overview of HasData
 In Entity Framework before .NET Core, entity framework had a way to create seed data but that method had a number of issues so they decided not to bring it over to Entity Framework Core. Now that we're into version 2.1 of Entity Framework Core, they wanted to allow for a way to seed the data with certain types of data.
 
