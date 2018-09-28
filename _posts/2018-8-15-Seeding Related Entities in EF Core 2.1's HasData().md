@@ -57,7 +57,7 @@ So my problem started when I wanted to seed related entities too. So, my Person 
     public DateTime Birthdate { get; set; }
     public ICollection<Toy> Toys { get; set; }
   }
-[% endhighlight %]
+{% endhighlight %}
 
 So I thought I might be able to just add the toys here and HasData would fix it:
 
