@@ -250,6 +250,9 @@ nav {
         color: $darkerGray;
         list-style-type: none;
         text-align: justify;
+        transition-property: text-indent;
+        transition-duration: 1s;
+        transition-delay: 0.5s;
         &:hover {
           background: $darkerGray;
           color: whitesmoke;
