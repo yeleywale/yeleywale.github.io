@@ -183,6 +183,9 @@ img {
 }
 
 .site-info {
+  nav {
+    color: $darkerGray;
+  }
   @include mobile {
     float: none;
     display: block;
