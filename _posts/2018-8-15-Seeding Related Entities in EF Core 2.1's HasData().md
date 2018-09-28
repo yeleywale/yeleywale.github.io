@@ -3,7 +3,7 @@ In Entity Framework before .NET Core, entity framework had a way to create seed 
 
 The way it works is to override the OnModelCreating method of the DbContext. The OnModelCreating method is for mapping your entities to the database types. E.g.:
 
-```csharp
+{% highlight csharp %}
 protected override void OnModelCreating(ModelBuilder bldr)
 {
   base.OnModelCreating(bldr);
@@ -12,7 +12,7 @@ protected override void OnModelCreating(ModelBuilder bldr)
     .Property(p => p.Name)
     .HasMaxLength(100);
 }
-```
+{% endhighlight %}
 In this example, I'm just setting the max length of the name to be 100 characters long (and we could have done this with an attribute too if that's your kind of thing).
 
 But this is where we can use HasData to add seeded data:
