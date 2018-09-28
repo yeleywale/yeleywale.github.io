@@ -242,15 +242,13 @@ nav {
 
 .posts {
   ul {
-    a {
-       
+    a {       
       li {
         padding-left: 0px;
         padding-right: 0px;
         border-top: 1px solid $darkerGray;
         list-style-type: none;
         text-align: justify;
-      }
         &:hover {
           background: $darkerGray;
           color: &whitesmoke;
@@ -260,6 +258,7 @@ nav {
         &:last-child {
           border-bottom: 1px solid $darkerGray;
         }
+      }        
         .datelist {
           float: right;
           color: $gray;
@@ -268,7 +267,6 @@ nav {
       }
     }
     } 
-}
 
 .posts > .post:last-child {
   padding-bottom: 1em;
