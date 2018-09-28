@@ -223,20 +223,21 @@ nav {
     margin-top: 9px;
     display: block;
     font-size: 16px;
-  }
+  } 
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    }
+  
 }
 
-a.nav {
+a.navb {
   margin-left: 20px;
   color: $darkGray;
   text-align: right;
   font-weight: 300;
   letter-spacing: 1px;
-
-  @include mobile {
-    margin: 0 10px;
-    color: $blue;
-  }
 }
 
 //
