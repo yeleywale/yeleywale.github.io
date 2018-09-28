@@ -214,8 +214,8 @@ img {
 }
 
 nav {
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  // margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $whitney-medium;
   font-size: 18px;
 
   @include mobile {
