@@ -193,6 +193,26 @@ img {
   }
 }
 
+.tags {
+  margin: 0px auto 40px auto;
+  text-align: center;
+  div {
+    margin-bottom: 16px;
+  }
+  a {
+    border: 1px solid #222;
+    border-radius: 10px 40px 40px 10px;
+    padding: 5px;
+    margin: 4px;
+    color: $lightGray;
+    &:hover {
+      background: $darkGray;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
 .site-name {
   margin: 0;
   cursor: pointer;
@@ -315,13 +335,7 @@ footer {
   text-align: center;
 }
 
-.tags {
-  margin: 0px auto 40px auto;
-  text-align: center;
-  > span {
-    color: $lightGray;
-  }
-}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
