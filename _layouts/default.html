@@ -3,6 +3,27 @@
 
 <head>
   {% include head.html %}
+
+  <style>
+    .nav-brand {
+      color: #222;
+      font-size: 28px;
+      font-weight: 400;
+      font-stretch: extra-expanded;
+      word-spacing: 5px;
+      line-height: 33.6px;
+    }
+
+    .nav-item .nav-link {
+      font-family: Whitney-medium;
+      color: #222;
+
+    }
+
+    .nav-link:hover {
+      color: #333;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,31 +43,15 @@
               <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/resume">About</a>
+              <a class="nav-link" href="{{ site.baseurl }}/resume">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/portfolio">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-divider" href="{{ site.baseurl }}/">Blog</a>
-                  <a class="dropdown-divider" href="{{ site.baseurl }}/about">About</a>
-                  <a class="dropdown-divider" href="{{ site.baseurl }}/resume">Resume</a>
-                  <a class="dropdown-divider" href="{{ site.baseurl }}/portfolio">Portfolio</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" href="{{ site.baseurl }}/portfolio">Portfolio</a>
             </li>
           </ul>
         </div>
       </nav>
-  <div class="wrapper-masthead">
+  <!-- <div class="wrapper-masthead">
       <header class="masthead container">
         <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
 
@@ -63,7 +68,7 @@
             <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
           </nav>
       </header>
-    </div>
+    </div> -->
   </div>
 
   <div id="main" role="main" class="container">
