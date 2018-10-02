@@ -1,4 +1,5 @@
 ---
+layout: post
 category: Dev
 tags: C#, EfCore 
 ---
