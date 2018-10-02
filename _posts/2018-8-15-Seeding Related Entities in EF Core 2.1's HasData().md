@@ -1,5 +1,6 @@
 ---
-tags: C# EfCore 
+category: Dev
+tags: C#, EfCore 
 ---
 
 ## Brief Overview of HasData
