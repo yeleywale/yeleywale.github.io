@@ -331,10 +331,18 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  div {
+    margin-top: 10px;
+  }
 }
 
 .footer-links {
-  border-left: 2px solid black;
+  border-left: 1px ridge $darkerGray;
+  a {
+      display: block;
+      text-align: left;
+      text-indent: 10px;
+  }
 }
 
 
