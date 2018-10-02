@@ -1,15 +1,15 @@
-- name: React.js
+- name: react.js
 
-- name: C#
+- name: c#
 
-- name: CSharp
+- name: cSharp
 
-- name: Scala
+- name: scala
 
 - name: kubernetes
 
-- name: Akka
+- name: akka
 
-- name: Akka-stream
+- name: akka-stream
 
-- name: Haskell
+- name: haskell

@@ -5,7 +5,7 @@ layout: default
 <div class="tags">
   <div><span>Tags {% octicon tag %}</span></div>
   {% for tag in site.data.tags %}
-	  <a href=""> {{ tag.name }} </a>
+	  <a href="/tags/{{ tag }}/"> {{ tag.name }} </a>
   {% endfor %}
 
 </div>
