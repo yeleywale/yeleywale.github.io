@@ -4,11 +4,20 @@ layout: default
 
 <div class="tags">
   <div><span>Tags {% octicon tag %}</span></div>
-  {% for tag in page.tags %}
+  {% for tag in site.tags %}
 	  <a href=""> {{ tag.name }} </a>
   {% endfor %}
 
 </div>
+
+{% for tag in site.tags %}
+  <h3>{{ tags[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
 
 <article class="post">
   <h1>{{ page.title }}</h1>
@@ -21,12 +30,12 @@ layout: default
     Written on {% octicon calendar %} {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  <span>[
+  <span>
     {% for tag in page.tags %}
       {% capture tag_name %}{{ tag }}{% endcapture %}
       <a href="/tag/{{ tag_name }}"><code class="highlighter-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
     {% endfor %}
-  ]</span>
+  </span>
 
   {% include disqus.html %}
 </article>
