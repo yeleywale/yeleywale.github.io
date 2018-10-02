@@ -273,6 +273,7 @@ nav {
       li {
         padding: 0.8em 0px 0.8em 0px;
         border-top: 1px solid $darkerGray;
+        border-bottom: 1px solid $darkerGray;
         color: $darkerGray;
         list-style-type: none;
         text-align: justify;
@@ -285,8 +286,12 @@ nav {
           text-decoration: none;
           text-indent: 20px;
         }
-       
-      }        
+      } 
+      &:last-child {
+        li {
+          border-bottom: 1px solid $darkerGray;
+        }
+      }       
         .datelist {
           float: right;
           color: $gray;
@@ -294,11 +299,7 @@ nav {
         
       }
     }
-  } 
-
-  .posts ul a li:last-child {
-    border-bottom: 1px solid $darkerGray;    
-  }
+    } 
 
 .posts > .post:last-child {
   padding-bottom: 1em;
