@@ -273,6 +273,7 @@ nav {
       li {
         padding: 0.8em 0px 0.8em 0px;
         border-top: 1px solid $darkerGray;
+        border-bottom: 1px solid $darkerGray;
         color: $darkerGray;
         list-style-type: none;
         text-align: justify;
@@ -284,9 +285,6 @@ nav {
           color: whitesmoke;
           text-decoration: none;
           text-indent: 20px;
-        }
-        &:last-child {
-          border-bottom: 1px solid $darkerGray;
         }
       }        
         .datelist {
