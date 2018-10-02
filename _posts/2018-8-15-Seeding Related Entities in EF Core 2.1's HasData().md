@@ -1,7 +1,7 @@
 ---
 layout: post
 category: Dev
-tags: C# EfCore 
+tags: CSharp EfCore 
 ---
 
 ## Brief Overview of HasData
