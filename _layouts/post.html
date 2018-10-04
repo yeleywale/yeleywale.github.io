@@ -4,7 +4,7 @@ layout: default
 
 <div class="tags">
   <div><span>Tags {% octicon tag height:22 class:"right left" aria-label:Tag %}</span></div>
-  {% for tag in site.tags %}
+  {% for tag in page.tags %}
 	  <a href="/tags/{{ tag[0] }}/"> {{ tag[0] }} </a>
   {% endfor %}
 
