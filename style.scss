@@ -278,6 +278,9 @@ nav {
 // .main
 //
 
+.blog-title {
+  padding-left: 0px;
+}
 .posts {
   ul {
     a { 
@@ -294,7 +297,6 @@ nav {
         font-weight: bold;
         font-size: 16px;
         letter-spacing: 0.5px;
-
         &:hover {
           background: $darkerGray;
           color: whitesmoke;
@@ -307,7 +309,7 @@ nav {
           border-bottom: 1px solid $darkerGray;
         }
       }       
-        .datelist {
+        span.datelist {
           text-align: right;
           color: $gray;
         }
