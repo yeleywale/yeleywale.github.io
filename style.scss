@@ -200,11 +200,12 @@ img {
     margin-bottom: 16px;
   }
   a {
-    border: 1px solid #222;
-    border-radius: 10px 40px 40px 10px;
-    padding: 5px;
+    padding: 2px;
+    padding-left: 4px;
     margin: 4px;
-    color: $darkGray;
+    color: #fff;
+    background: gray;
+    font-size: 14px;
     &:hover {
       background: $darkGray;
       text-decoration: none;
