@@ -1,7 +1,7 @@
 ---
 layout: post
 category: Dev
-tags: react.js Web
+tags: [react.js, Web]
 ---
 
 ## What is React.js
