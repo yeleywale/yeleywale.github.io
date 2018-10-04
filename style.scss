@@ -347,7 +347,7 @@ footer {
   margin-top: 50px;
   padding: 20px 0;
   text-align: center;
-  background: linear-gradient(180deg,#1e1e90 0,#337ab7 100%);
+  background: whitesmoke;
   div {
     margin-top: 10px;
   }
@@ -355,6 +355,7 @@ footer {
 
 .footer-links {
   border-left: 1px ridge $darkerGray;
+  padding: 20px 0;
   a {
       display: block;
       text-align: left;
