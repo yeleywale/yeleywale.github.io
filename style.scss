@@ -278,8 +278,9 @@ nav {
 // .main
 //
 
-.blog-title {
+strong.blog-title {
   padding-left: 0px;
+  font-weight: bold;
 }
 .posts {
   ul {
@@ -348,6 +349,7 @@ footer {
   padding: 20px 0;
   text-align: center;
   background: whitesmoke;
+  box-shadow: 1px -1px 3px grey;
   div {
     margin-top: 10px;
   }
