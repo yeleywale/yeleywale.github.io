@@ -226,8 +226,11 @@ img {
   padding-left: 30px;
   a {
     color: $darkGray; 
+    letter-spacing: 2px;
+    text-shadow: 0.5px 0.5px 0.5px dimgrey;
     &:hover {
       color: $darkerGray;
+      text-decoration: none;
     }   
   }
 }
@@ -288,6 +291,10 @@ nav {
         transition-property: text-indent, background-color;
         transition-duration: 0.5s;
         transition-delay: 0.1s;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+
         &:hover {
           background: $darkerGray;
           color: whitesmoke;
@@ -336,9 +343,9 @@ nav {
 
 footer {
   margin-top: 50px;
-  border-top: 1px solid $darkerGray;
   padding: 20px 0;
   text-align: center;
+  background: linear-gradient(180deg,#1e1e90 0,#337ab7 100%);
   div {
     margin-top: 10px;
   }
