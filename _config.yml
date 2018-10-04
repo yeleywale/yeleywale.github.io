@@ -81,6 +81,7 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
   - jekyll-octicons
+  - jekyll-font-awesome-sass
 
 encoding: utf-8
 
