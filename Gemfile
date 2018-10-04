@@ -7,3 +7,4 @@ gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem "jekyll-feed"
 gem 'jekyll-seo-tag'
+gem 'jekyll-font-awesome-sass'
