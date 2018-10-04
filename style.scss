@@ -206,7 +206,9 @@ img {
     color: #fff;
     background: gray;
     font-size: 14px;
+    text-shadow: 1px 1px 1px black;
     &:hover {
+      text-shadow: 0.5px 0.5px 1px whitesmoke;
       background: $darkGray;
       text-decoration: none;
       color: $white;
@@ -223,7 +225,10 @@ img {
   letter-spacing: 1px;
   padding-left: 30px;
   a {
-    color: $darkGray;    
+    color: $darkGray; 
+    &:hover {
+      color: $darkerGray;
+    }   
   }
 }
 
@@ -261,6 +266,9 @@ nav {
   padding: 10px;
   color: $darkGray;
   font-family: $whitney-medium;
+  &:hover {
+    color: $darkerGray;
+  }
 }
 
 //
@@ -277,9 +285,9 @@ nav {
         color: $darkerGray;
         list-style-type: none;
         text-align: justify;
-        transition-property: text-indent;
+        transition-property: text-indent, background-color;
         transition-duration: 0.5s;
-        transition-delay: 0.2s;
+        transition-delay: 0.1s;
         &:hover {
           background: $darkerGray;
           color: whitesmoke;
@@ -345,6 +353,10 @@ footer {
       display: block;
       text-align: left;
       text-indent: 10px;
+      color: $darkGray;
+      &:hover {
+        color: $darkerGray;
+      }
   }
 }
 
