@@ -60,9 +60,6 @@ permalink: /:title/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
-font-awesome:
-  assets: true
-
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
@@ -84,7 +81,6 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
   - jekyll-octicons
-  - jekyll-font-awesome-sass
 
 encoding: utf-8
 
