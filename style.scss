@@ -351,7 +351,11 @@ footer {
   background: whitesmoke;
   box-shadow: 1px -1px 3px grey;
   div {
+    div {
+      text-align: right;
+    }
     margin-top: 10px;
+    text-align: left;
   }
 }
 
