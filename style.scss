@@ -18,7 +18,7 @@ html {
 
 body {
 	background: $mainbg;
-  font: 18px/1.4 $whitney-medium;
+  font: 18px/1.4 $Hoefler;
   color: $darkGray;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $whitney-medium;
+  font-family: $Hoefler;
   color: $darkerGray;
   font-weight: bold;
 
@@ -214,7 +214,7 @@ img {
 .site-name {
   margin: 0;
   cursor: pointer;
-  font-family: $whitney-medium;
+  font-family: $Hoefler;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -242,7 +242,7 @@ img {
 
 nav {
   // margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $whitney-medium;
+  font-family: $Hoefler;
   font-size: 18px;
 
   @include mobile {
@@ -263,7 +263,7 @@ nav {
   float: right;
   padding: 10px;
   color: $darkGray;
-  font-family: $whitney-medium;
+  font-family: $Hoefler;
   &:hover {
     color: $darkerGray;
   }
@@ -282,6 +282,7 @@ strong.blog-title {
     a { 
       text-decoration: none;      
       li {
+        font-family: $Hoefler;
         padding: 0.8em 0px 0.8em 0px;
         border-top: 1px solid $darkerGray;
         color: $darkerGray;
@@ -320,6 +321,8 @@ strong.blog-title {
 }
 
 .post {
+  font-family: $hoefler;
+  font-size: 16px;
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -364,6 +367,10 @@ footer {
         color: $darkerGray;
       }
   }
+}
+
+.footer-about {
+  font-family: $Hoefler;
 }
 
 .google-search {

@@ -11,8 +11,6 @@ description: Hi I'm Akinwale Awoyele, a computer programmer and journeyman softw
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/2574957?s=400&u=12bb8593d157fba19756289afed6f72ed2b829bf&v=4
 
-github: [metadata]
-
 #
 # Flags below are optional
 #
@@ -64,7 +62,6 @@ version: v1.2.0
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  math_engine: mathjax
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -75,14 +72,11 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
   
-
 # Use the following plug-ins
-plugins:
+gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
-
-encoding: utf-8
+  
 
 # Exclude these files from your production _site
 exclude:
@@ -91,4 +85,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
 encoding: utf-8
+
+
