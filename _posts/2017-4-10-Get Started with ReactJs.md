@@ -2,6 +2,7 @@
 layout: post
 category: Dev
 tags: [react.js, Web]
+title: React get started
 ---
 
 ## What is React.js
