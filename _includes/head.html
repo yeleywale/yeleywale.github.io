@@ -7,32 +7,19 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-{% if site.tags != "" %}
-  {% include tags.html %}
-{% endif %}
+{% if site.tags != "" %} {% include tags.html %} {% endif %}
 
 
-<link rel="apple-touch-icon" sizes="57x57" href="images/assets/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/assets/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/assets/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/assets/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/assets/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/assets/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/assets/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/assets/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/assets/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="images/assets/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="images/assets/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon-16x16.png">
-<link rel="manifest" href="images/assets/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="images/assets/ms-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ post.title }}" href="{{ site.baseurl }}/feed.xml" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-{% seo %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> {% seo %}
