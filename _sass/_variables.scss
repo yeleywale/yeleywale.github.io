@@ -1,34 +1,40 @@
-
 //
 // VARIABLES
 //
 @font-face {
-  font-family: 'Hoefler';
-  src: url('./Hoefler-regular.ttf') format('truetype');
+    font-family: 'Hoefler';
+    src: url('./Hoefler-regular.ttf') format('truetype');
 }
 
 // Colors
 $blue: #4183C4;
-
 // Grays
-$black: #000;
+// $black: #000;
+$black: #FFFFFF;
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
-$mainbg:  linear-gradient(to bottom, #EEE 0%, #FFF 10%, #FFF 90%, #EEE 100%);
-
+$mainbg : #1E1E1E;
+$foreground: #D8D8D8;
+$textColor: #FFFFFF;
 // Font stacks
-$Hoefler: Hoefler, "Helvetica Neue", sans-serif;
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-
+$Hoefler: Hoefler,
+"Helvetica Neue",
+sans-serif;
+$helvetica: Helvetica,
+Arial,
+sans-serif;
+$helveticaNeue: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+$georgia: Georgia,
+serif;
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
+    @media screen and (max-width: 640px) {
+        @content;
+    }
 }
-
