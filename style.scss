@@ -371,7 +371,6 @@ footer {
     margin-top: 50px;
     padding: 20px 0;
     text-align: center;
-    background: whitesmoke;
     box-shadow: inset -4px 3px 3px #fff;
     div {
         margin-top: 10px;
@@ -399,10 +398,6 @@ footer {
     font-size: 18px;
 }
 
-.google-search {
-    margin-bottom: 40px;
-    padding-right: 40px;
-}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
