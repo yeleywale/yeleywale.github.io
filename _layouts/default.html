@@ -13,12 +13,12 @@
             word-spacing: 5px;
             line-height: 33.6px;
         }
-        
+
         .nav-item .nav-link {
             font-family: Whitney-medium;
             color: #222;
         }
-        
+
         .nav-link:hover {
             color: #333;
         }
@@ -32,7 +32,9 @@
 
             <div class="row">
                 <div class="site-info col-5">
-                    <h1 class="site-name"><i class="fas fa-laptop-code"></i><a href="{{ site.baseurl }} /">{{" / dev / " | append: site.name | append: " / blog "}} </a><i class="fas fa-greater-than"></i> </h1>
+                    <h1 class="site-name"><i class="fas fa-laptop-code"></i><a
+                            href="{{ site.baseurl }} /">{{" / dev / " | append: site.name | append: " / blog "}} </a><i
+                            class="fas fa-greater-than"></i> </h1>
                     <!-- <p class="site-description">{{ site.description }}</p> -->
                 </div>
 
@@ -42,9 +44,9 @@
                     <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
                 </nav>
         </header>
-        </div>
     </div>
-    <div class="container-fluid row google-search">
+    </div>
+    <!-- <div class="container-fluid row google-search">
         <div class="col-lg-5 col-sm-8 offset-lg-7 offset-sm-4 col-md-7 offset-md-5">
             <script>
                 (function() {
@@ -59,28 +61,37 @@
             </script>
             <gcse:search></gcse:search>
         </div>
-    </div>
+    </div> -->
 
 
     <div id="main" role="main" class="container">
         {{ content }}
     </div>
 
-    <footer class="footer container-fluid">
-        <div class="row">
-            <div class="col">
-                <!-- <span class="footer-about">
-          Hi<i class="fas fa-exclamation"></i> I'm <strong>Akinwale Awoyele</strong>, a computer programmer and journeyman software engineer living in <a href="https://en.wikipedia.org/wiki/Lagos_State">Lagos</a> <i class="fas fa-heart"></i>, Nigeria. I code for fun and profit. I'm also likely to be caught touring the great
-           continent of Africa, whether rappeling across canyons in <a href="https://en.wikipedia.org/wiki/Cape_Town">Cape Town</a> or searching through the ancient ruins in <a href="">Timbuktu</a>.
-        </span> -->
-            </div>
-            {% include svg-icons.html %}
-        </div>
-    </footer>
+    <div class="container outer-footer" >
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <footer class="footer container-fluid">
+            <div class="row">
+                <div class="col">
+                    <!-- <span class="footer-about">
+              Hi<i class="fas fa-exclamation"></i> I'm <strong>Akinwale Awoyele</strong>, a computer programmer and journeyman software engineer living in <a href="https://en.wikipedia.org/wiki/Lagos_State">Lagos</a> <i class="fas fa-heart"></i>, Nigeria. I code for fun and profit. I'm also likely to be caught touring the great
+               continent of Africa, whether rappeling across canyons in <a href="https://en.wikipedia.org/wiki/Cape_Town">Cape Town</a> or searching through the ancient ruins in <a href="">Timbuktu</a>.
+            </span> -->
+                </div>
+                {% include svg-icons.html %}
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 

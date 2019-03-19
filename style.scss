@@ -210,17 +210,22 @@ img {
     text-align: center;
     div {
         margin-bottom: 16px;
+        span {
+            border: 1px solid white;
+            padding: 5px;
+        }
     }
     a {
         padding: 2px;
         padding-left: 4px;
         margin: 4px;
-        color: #fff;
-        background: gray;
+        color: brown;
+        background: #312e2e;
         font-size: 14px;
-        text-shadow: 1px 1px 1px black;
+        // text-shadow: 1px 1px 1px black;
+        border: 1px solid white;
         &:hover {
-            text-shadow: 0.5px 0.5px 1px whitesmoke;
+            // text-shadow: 0.5px 0.5px 1px whitesmoke;
             background: $darkGray;
             text-decoration: none;
             color: $white;
@@ -235,13 +240,13 @@ img {
     font-weight: 300;
     font-size: 28px;
     letter-spacing: 1px;
-    padding-left: 30px;
+    padding: 10px 10px 10px 30px;
+    border: 5px solid white;
     a {
-        color: $darkGray;
+        color: $white;
         letter-spacing: 2px;
-        text-shadow: 0.5px 0.5px 0.5px dimgrey;
         &:hover {
-            color: $darkerGray;
+            color: $white;
             text-decoration: none;
         }
     }
@@ -272,13 +277,16 @@ nav {
     }
 }
 
+
+
 .navb a {
     float: right;
     padding: 10px;
-    color: $darkGray;
+    border: 1px solid white;
+    color: $white;
     font-family: $Hoefler;
     &:hover {
-        color: $darkerGray;
+        color: darkolivegreen;
     }
 }
 
@@ -297,8 +305,8 @@ strong.blog-title {
             li {
                 font-family: $Hoefler;
                 padding: 0.8em 0px 0.8em 0px;
-                border-top: 1px solid $darkerGray;
-                color: $darkerGray;
+                // border-top: 1px solid $darkerGray;
+                color: $white;
                 list-style-type: none;
                 text-align: justify;
                 transition-property: text-indent, background-color;
@@ -312,23 +320,24 @@ strong.blog-title {
                     color: whitesmoke;
                     text-decoration: none;
                     text-indent: 20px;
+                    border: 1px solid brown;
                 }
             }
             &:last-child {
                 li {
-                    border-bottom: 1px solid $darkerGray;
+                    // border-bottom: 1px solid $darkerGray;
                 }
             }
             span.datelist {
                 text-align: right;
-                color: $gray;
+                color: brown;
             }
         }
     }
 }
 
 .posts>.post:last-child {
-    padding-bottom: 1em;
+    // padding-bottom: 1em;
     border-bottom: none;
 }
 
@@ -352,12 +361,18 @@ strong.blog-title {
     }
 }
 
+.outer-footer {    
+    box-shadow: -2px 4px 3px #fff;
+    padding: 0;
+
+}
+
 footer {
     margin-top: 50px;
     padding: 20px 0;
     text-align: center;
     background: whitesmoke;
-    box-shadow: 1px -1px 3px grey;
+    box-shadow: inset -4px 3px 3px #fff;
     div {
         margin-top: 10px;
         text-align: right;
