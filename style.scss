@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background: $mainbg;
+    background: $mainbg !important;
     font: 18px/1.4 $Hoefler;
     color: $textColor;
 }
@@ -211,6 +211,7 @@ img {
     div {
         margin-bottom: 16px;
         span {
+            color: white;
             border: 1px solid white;
             padding: 5px;
         }
@@ -312,7 +313,7 @@ strong.blog-title {
                 transition-property: text-indent, background-color;
                 transition-duration: 0.5s;
                 transition-delay: 0.1s;
-                font-weight: bold;
+                // font-weight: bold;
                 font-size: 18px;
                 letter-spacing: 0.5px;
                 &:hover {
@@ -363,8 +364,7 @@ strong.blog-title {
 
 .outer-footer {    
     box-shadow: -2px 4px 3px #fff;
-    padding: 0;
-
+    padding: 0 !important;
 }
 
 footer {
@@ -387,7 +387,7 @@ footer {
         font-weight: 900;
         font-size: 40px;
         text-indent: 10px;
-        color: $darkGray;
+        color: $white;
         &:hover {
             color: $darkerGray;
         }
