@@ -3,7 +3,6 @@ layout: default
 ---
 
 <div class="tags">
-    <div><span class="filter">Filter <i class="fas fa-tags"></i></span></div>
     {% for tag in page.tags %}
     <a href="/tags/{{ tag }}/"> {{ tag }} </a> {% endfor %}
 

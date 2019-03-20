@@ -222,16 +222,17 @@ img {
         }
     }
     a {
-        padding: 2px;
-        padding-left: 4px;
-        margin: 4px;
+        padding: 4px;
         color: sandybrown;
         font-size: 14px;
+        border: 1px ridge #222;
+        box-shadow: 1px 1px;
         &:hover {
             // text-shadow: 0.5px 0.5px 1px whitesmoke;
             text-decoration: none;
             color: $white;
-            border: 1px dashed sandybrown;
+            // border: 1px dashed sandybrown;
+            background: chocolate;
         }
     }
 }
