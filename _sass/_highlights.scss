@@ -1,5 +1,5 @@
 
-.highlight {
+pre.highlight {
   background-color: #000;
   padding: 7px 7px 7px 10px;
   border: 1px solid brown;
@@ -10,7 +10,7 @@
   overflow: scroll;
 }
 
-code {
+code, pre {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
 }
 
