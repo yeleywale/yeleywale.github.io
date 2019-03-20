@@ -170,6 +170,10 @@ img {
 // .masthead
 //
 .masthead {
+    border: 1px ridge #222;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    box-shadow: 5px 5px;
     padding: 20px 0;
     a {
         color: $darkerGray;
@@ -212,8 +216,8 @@ img {
         margin-bottom: 16px;
         span {
             color: white;
-            border: 1px solid white;
-            padding: 5px;
+            border: 1px ridge #222;
+            padding: 5px 15px 5px 15px;
         }
     }
     a {
@@ -242,7 +246,7 @@ img {
     font-size: 28px;
     letter-spacing: 1px;
     padding: 10px 10px 10px 30px;
-    border: 5px solid white;
+    border: 5px ridge #222;
     a {
         color: $white;
         letter-spacing: 2px;
@@ -283,7 +287,7 @@ nav {
 .navb a {
     float: right;
     padding: 10px;
-    border: 1px solid white;
+    border: 5px ridge #222;
     color: $white;
     font-family: $Hoefler;
     &:hover {
@@ -300,6 +304,9 @@ strong.blog-title {
 }
 
 .posts {
+    border: 1px ridge #222;
+    box-shadow: 5px 5px;
+    padding: 15px 30px 15px 30px;
     ul {
         a {
             text-decoration: none;
@@ -316,12 +323,13 @@ strong.blog-title {
                 // font-weight: bold;
                 font-size: 18px;
                 letter-spacing: 0.5px;
+                margin-top: 10px;
                 &:hover {
                     background: $darkerGray;
                     color: whitesmoke;
                     text-decoration: none;
                     text-indent: 20px;
-                    border: 1px solid brown;
+                    border: 1px dashed brown;
                 }
             }
             &:last-child {
@@ -331,7 +339,7 @@ strong.blog-title {
             }
             span.datelist {
                 text-align: right;
-                color: brown;
+                color: sandybrown;
             }
         }
     }
@@ -363,8 +371,11 @@ strong.blog-title {
 }
 
 .outer-footer {    
-    box-shadow: -2px 4px 3px #fff;
     padding: 0 !important;
+    margin-bottom: 30px;
+    border: 1px ridge #222;
+    margin-top: 60px;
+    box-shadow: 5px 5px;
 }
 
 footer {
@@ -379,9 +390,10 @@ footer {
 }
 
 .footer-links {
-    border-left: 1px ridge $darkerGray;
+    border: 1px ridge #222;
     padding: 20px 0;
     text-align: left;
+    margin-right: 20px;
     a {
         font-weight: 900;
         font-size: 40px;
