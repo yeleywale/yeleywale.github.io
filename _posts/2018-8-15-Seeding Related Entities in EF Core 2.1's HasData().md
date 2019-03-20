@@ -9,23 +9,6 @@ In Entity Framework before .NET Core, entity framework had a way to create seed 
 
 The way it works is to override the OnModelCreating method of the DbContext. The OnModelCreating method is for mapping your entities to the database types. E.g.:
 
-```csharp
-
-  protected override void OnModelCreating(ModelBuilder bldr)
-  {
-    base.OnModelCreating(bldr);
-
-    bldr.Entity<Person>()
-      .Property(p => p.Name)
-      .HasMaxLength(100);
-  }
-
-```
-In this example, I'm just setting the max length of the name to be 100 characters long (and we could have done this with an attribute too if that's your kind of thing).
-
-But this is where we can use HasData to add seeded data:
-
-```csharp
 
     protected override void OnModelCreating(ModelBuilder bldr)
     {
@@ -34,23 +17,36 @@ But this is where we can use HasData to add seeded data:
       bldr.Entity<Person>()
         .Property(p => p.Name)
         .HasMaxLength(100);
-
-      bldr.Entity<Person>()
-        .HasData(new Person
-        {
-          Id = 1,
-          Name = "John Sheu",
-          Birthdate = DateTime.Parse("1969-04-05")
-        },
-        new Person
-        {
-          Id = 2,
-          Name = "Akinwale Alexander",
-          Birthdate = DateTime.Parse("1975-07-05")
-        }
-        );
     }
 
+In this example, I'm just setting the max length of the name to be 100 characters long (and we could have done this with an attribute too if that's your kind of thing).
+
+But this is where we can use HasData to add seeded data:
+
+```c#
+protected override void OnModelCreating(ModelBuilder bldr)
+{
+  base.OnModelCreating(bldr);
+
+  bldr.Entity<Person>()
+    .Property(p => p.Name)
+    .HasMaxLength(100);
+
+  bldr.Entity<Person>()
+    .HasData(new Person
+    {
+      Id = 1,
+      Name = "John Sheu",
+      Birthdate = DateTime.Parse("1969-04-05")
+    },
+    new Person
+    {
+      Id = 2,
+      Name = "Akinwale Alexander",
+      Birthdate = DateTime.Parse("1975-07-05")
+    }
+    );
+}
 ```
 You'll see that I can simply add new people by specifying the primary key and the data I want to seed. This works great.
 
@@ -60,15 +56,13 @@ One drawback to think about is that this is created every time that a context is
 So my problem started when I wanted to seed related entities too. So, my Person class looks like this:
 
 ```csharp
-
-    public class Person
-    {
-      public int Id { get; set; }
-      public string Name { get; set; }
-      public DateTime Birthdate { get; set; }
-      public ICollection<Toy> Toys { get; set; }
-    }
-
+public class Person
+{
+  public int Id { get; set; }
+  public string Name { get; set; }
+  public DateTime Birthdate { get; set; }
+  public ICollection<Toy> Toys { get; set; }
+}
 ```
 
 So I thought I might be able to just add the toys here and HasData would fix it:
