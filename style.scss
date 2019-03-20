@@ -229,9 +229,9 @@ img {
         font-size: 14px;
         &:hover {
             // text-shadow: 0.5px 0.5px 1px whitesmoke;
-            background: $darkGray;
             text-decoration: none;
             color: $white;
+            border: 1px dashed sandybrown;
         }
     }
 }
@@ -290,6 +290,7 @@ nav {
     font-family: $Hoefler;
     &:hover {
         color: darkolivegreen;
+        text-decoration: none;
     }
 }
 
@@ -320,7 +321,6 @@ strong.blog-title {
                 transition-duration: 0.5s;
                 transition-delay: 0.1s;
                 // font-weight: bold;
-                font-size: 18px;
                 letter-spacing: 0.5px;
                 margin-top: 10px;
                 margin-right: 15px;
@@ -418,6 +418,7 @@ footer {
    .entry {
        h2 {
            color: gray;
+           margin-top: 40px;
        }
        color: white;
    }
