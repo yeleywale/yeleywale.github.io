@@ -14,8 +14,8 @@ layout: default
     {% for post in site.posts %}
     <a href="{{ site.baseurl }}{{ post.url }}" class="post-list">
         <li class="row">
-            <em class="col-lg-6 blog-title">{{ post.title }}</em>
-            <span class="datelist col-lg-4 offset-lg-2">{{ post.date | date: "%B %e, %Y" }}</span>
+            <em class="col-lg-9 blog-title">{{ post.title }}</em>
+            <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
         </li>
     </a>
     {% endfor %}
