@@ -223,7 +223,7 @@ img {
     }
     a {
         padding: 4px;
-        color: sandybrown;
+        color: yellow;
         font-size: 14px;
         border: 1px ridge #222;
         box-shadow: 1px 1px;
@@ -290,7 +290,7 @@ nav {
     color: $white;
     font-family: $Hoefler;
     &:hover {
-        color: darkolivegreen;
+        color: yellow;
         text-decoration: none;
     }
 }
@@ -340,7 +340,7 @@ strong.blog-title {
             }
             span.datelist {
                 text-align: right;
-                color: sandybrown;
+                color: yellow;
                 background: #2f2626;
                 text-align: right;
             }
@@ -414,14 +414,14 @@ footer {
 
 .post {
    h1 {
-       color: sandybrown;
+       color: yellow;
        margin-bottom: 40px;
        text-align: center;
        font-size: 18px;
    }
    .entry {
        h2 {
-           color: gray;
+           color: orange;
            margin-top: 40px;
        }
        color: white;
