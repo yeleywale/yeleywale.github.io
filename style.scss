@@ -443,21 +443,17 @@ footer {
   }
   color: #d3d7de;
   font-family: "Courier new";
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.5em;
   cursor: default;
   position: absolute;
   width: 320px;
-  min-width: 320px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin: auto;
 }
 
 @media screen and (max-width: 320px) {
   .code-area {
-    font-size: 5vw;
+    font-size: 6vw;
     min-width: auto;
     width: 95%;
     margin: auto;
