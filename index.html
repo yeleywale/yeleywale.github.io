@@ -2,12 +2,24 @@
 layout: default
 ---
 
+<script>
+  twttr.widgets.createTimeline(
+  {
+    sourceType: "list",
+    ownerScreenName: "yeleywale",
+    slug: "national-parks"
+  },
+  document.getElementById("container")
+);
+</script>
+
 <div class="tags">
   {% for tag in site.data.tags %}
 	  <a href="/tags/{{ tag.name }}"> {{ tag.name }} </a>
   {% endfor %}
 
 </div>
+
 <div class="posts container">
   
   <ul>
