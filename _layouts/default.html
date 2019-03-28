@@ -26,47 +26,49 @@
 </head>
 
 <body>
-    <div class="wrapper-masthead container-fluid">
-        <header class="masthead container">
-            <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
+    <div class="container">
+        <div class="wrapper-masthead container-fluid">
+            <header class="masthead container">
+                <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
 
-            <div class="row">
-                <div class="site-info col-5">
-                    <h1 class="site-name"><a  href="{{ site.baseurl }} /">
-                        {{" / dev / " | append: site.name | append: " / blog "}} 
-                    </a> </h1>
-                    <!-- <p class="site-description">{{ site.description }}</p> -->
-                </div>
+                <div class="row">
+                    <div class="site-info col-5">
+                        <h1 class="site-name"><a href="{{ site.baseurl }} /">
+                                {{" / dev / " | append: site.name | append: " / blog "}}
+                            </a> </h1>
+                        <!-- <p class="site-description">{{ site.description }}</p> -->
+                    </div>
 
-                <nav class="col-7 navb">
-                    <a href="{{ site.baseurl }}/about">About</a>
-                    <a href="{{ site.baseurl }}/podcast">Podcast</a>
-                    <a href="{{ site.baseurl }}/portfolio">Projects</a>
-                </nav>
-        </header>
+                    <nav class="col-7 navb">
+                        <a href="{{ site.baseurl }}/about">About</a>
+                        <a href="{{ site.baseurl }}/podcast">Podcast</a>
+                        <a href="{{ site.baseurl }}/portfolio">Projects</a>
+                    </nav>
+            </header>
+        </div>
     </div>
-    </div>
-      <div id="main" role="main" class="container-fluid">
+    <div id="main" role="main" class="container-fluid">
         {{ content }}
     </div>
 
-    <div class="container outer-footer" >
-
-        <footer class="footer container-fluid">
-            <div>
-                
-            </div>
-            <div class="row">
-                <div class="col">
-                    <!-- <span class="footer-about">
-              Hi<i class="fas fa-exclamation"></i> I'm <strong>Akinwale Awoyele</strong>, a computer programmer and journeyman software engineer living in <a href="https://en.wikipedia.org/wiki/Lagos_State">Lagos</a> <i class="fas fa-heart"></i>, Nigeria. I code for fun and profit. I'm also likely to be caught touring the great
-               continent of Africa, whether rappeling across canyons in <a href="https://en.wikipedia.org/wiki/Cape_Town">Cape Town</a> or searching through the ancient ruins in <a href="">Timbuktu</a>.
-            </span> -->
+ <div class="container-fluid">
+        <footer class="footer">
+                <div>
+        
                 </div>
-                {% include svg-icons.html %}
-            </div>
-        </footer>
+                <div class="row">
+                    <div class="col">
+                        <!-- <span class="footer-about">
+                                  Hi<i class="fas fa-exclamation"></i> I'm <strong>Akinwale Awoyele</strong>, a computer programmer and journeyman software engineer living in <a href="https://en.wikipedia.org/wiki/Lagos_State">Lagos</a> <i class="fas fa-heart"></i>, Nigeria. I code for fun and profit. I'm also likely to be caught touring the great
+                                   continent of Africa, whether rappeling across canyons in <a href="https://en.wikipedia.org/wiki/Cape_Town">Cape Town</a> or searching through the ancient ruins in <a href="">Timbuktu</a>.
+                                </span> -->
+                    </div>
+                    {% include svg-icons.html %}
+                </div>
+            </footer>
+ </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
