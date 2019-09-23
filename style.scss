@@ -165,10 +165,11 @@ img {
 // .masthead
 //
 .masthead {
-  border: 1px ridge #222;
+  border: 1px solid #0a3a3a;
   margin-top: 30px;
   margin-bottom: 90px;
-  box-shadow: 5px 5px;
+  box-shadow: 5px 5px #0a3a3a;
+  border-radius: 5px;
   padding: 20px 0;
   a {
     color: $darkerGray;
@@ -211,23 +212,30 @@ img {
     margin-bottom: 16px;
     span {
       color: white;
-      border: 1px ridge #222;
+      border: 1px solid #222;
       padding: 5px 15px 5px 15px;
       font-style: italic;
     }
   }
   a {
-    padding: 4px;
-    color: yellow;
+    padding: 6px;
+    color: darken(#3985d0, 10%);
     font-size: 14px;
-    border: 1px ridge #222;
-    box-shadow: 1px 1px;
+    border: 1px solid #222;
+    &:first-child {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    &:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
     &:hover {
       // text-shadow: 0.5px 0.5px 1px whitesmoke;
       text-decoration: none;
       color: $white;
       // border: 1px dashed sandybrown;
-      background: orange;
+      background: #0a3a3a;
     }
   }
 }
@@ -240,12 +248,11 @@ img {
   font-size: 28px;
   letter-spacing: 1px;
   padding: 10px 10px 10px 30px;
-  border: 5px ridge #222;
   a {
-    color: $white;
+    color: #0a3a3a;
     letter-spacing: 2px;
     &:hover {
-      color: $white;
+      color: #darkcyan;
       text-decoration: none;
     }
   }
@@ -278,12 +285,22 @@ nav {
 
 .navb a {
   float: right;
-  padding: 5px;
-  border: 0.5px ridge #222;
-  color: $white;
+  padding: 6px;
+  border: 0.5px solid #0a3a3a;
+  color: #007bff;
   font-family: $Hoefler;
+  &:first-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  &:last-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
   &:hover {
-    color: yellow;
+    background: #0a3a3a;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -297,9 +314,10 @@ strong.blog-title {
 }
 
 .posts {
-  border: 1px ridge #222;
-  box-shadow: 5px 5px;
+  border: 1px ridge #0a3a3a;
+  box-shadow: 5px 5px #0a3a3a;
   padding: 15px 30px 15px 30px;
+  border-radius: 5px;
   ul {
     a {
       text-decoration: none;
@@ -308,7 +326,7 @@ strong.blog-title {
         font-family: $Hoefler;
         padding: 0.8em 0px 0.8em 0px;
         // border-top: 1px solid $darkerGray;
-        color: $white;
+        color: darken(#3985d0, 10%);
         list-style-type: none;
         text-align: justify;
         transition-property: text-indent, background-color;
@@ -319,11 +337,10 @@ strong.blog-title {
         margin-top: 10px;
         margin-right: 15px;
         &:hover {
-          background: #2f2626;
-          color: whitesmoke;
+          background: #fff;
+          color: #0a3a3a;
           text-decoration: none;
           text-indent: 20px;
-          border: 1px dashed brown;
         }
       }
       &:last-child {
@@ -333,8 +350,8 @@ strong.blog-title {
       }
       span.datelist {
         text-align: right;
-        color: yellow;
-        background: #2f2626;
+        color: #fff;
+        background: #0a3a3a;
         text-align: right;
         font-size: 18px;
       }
@@ -379,8 +396,9 @@ footer {
     margin-top: 50px;
     padding: 40px 10px;
     text-align: center;
-    border: 1px ridge #222;
-    box-shadow: 5px 5px;
+    border: 1px solid #0a3a3a;
+    box-shadow: 5px 5px #0a3a3a ;
+    border-radius: 5px;
     margin-bottom: 50px;
   div {
     margin-top: 10px;
@@ -389,7 +407,6 @@ footer {
 }
 
 .footer-links {
-  border: 1px ridge #222;
   padding: 20px 0;
   text-align: left;
   margin-right: 20px;
@@ -397,7 +414,7 @@ footer {
     font-weight: 900;
     font-size: 40px;
     text-indent: 10px;
-    color: $white;
+    color: #0a3a3a;
     &:hover {
       color: $darkerGray;
     }
@@ -411,24 +428,24 @@ footer {
 
 .post {
   h1 {
-    color: yellow;
+    color: darken(#3985d0, 10%);
     margin-bottom: 40px;
     text-align: center;
     font-size: 46px;
   }
   .entry {
     h2 {
-      color: orange;
+      color: darken(#3985d0, 10%);
       margin-top: 40px;
     }
-    color: white;
+    color: #0a3a3a;
   }
 }
 
 .page {
-  color: white;
+  color: #0a3a3a;
   h1 {
-    color: yellow;
+    color: darken(#3985d0, 10%);
   }
 }
 
