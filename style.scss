@@ -165,11 +165,11 @@ img {
 // .masthead
 //
 .masthead {
-  border: 1px solid #0a3a3a;
+  border: 1px solid #296bad;
+  box-shadow: 2px 2px 2px 0px #296bad;
+  border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 90px;
-  box-shadow: 5px 5px #0a3a3a;
-  border-radius: 5px;
   padding: 20px 0;
   a {
     color: $darkerGray;
@@ -219,9 +219,9 @@ img {
   }
   a {
     padding: 6px;
-    color: darken(#3985d0, 10%);
+    color: #0a3a3a;
     font-size: 14px;
-    border: 1px solid #222;
+    border: 1px solid #296bad;
     &:first-child {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
@@ -235,7 +235,7 @@ img {
       text-decoration: none;
       color: $white;
       // border: 1px dashed sandybrown;
-      background: #0a3a3a;
+      background: #296bad;
     }
   }
 }
@@ -286,8 +286,8 @@ nav {
 .navb a {
   float: right;
   padding: 6px;
-  border: 0.5px solid #0a3a3a;
-  color: #007bff;
+  border: 1px solid #296bad;
+  color: #0a3a3a;
   font-family: $Hoefler;
   &:first-child {
     border-top-right-radius: 3px;
@@ -299,7 +299,7 @@ nav {
     border-bottom-left-radius: 3px;
   }
   &:hover {
-    background: #0a3a3a;
+    background: #296bad;
     color: #fff;
     text-decoration: none;
   }
@@ -314,10 +314,10 @@ strong.blog-title {
 }
 
 .posts {
-  border: 1px ridge #0a3a3a;
-  box-shadow: 5px 5px #0a3a3a;
-  padding: 15px 30px 15px 30px;
+  border: 1px solid #296bad;
+  box-shadow: 2px 2px 2px 0px #296bad;
   border-radius: 5px;
+  padding: 15px 30px 15px 30px;
   ul {
     a {
       text-decoration: none;
@@ -326,7 +326,7 @@ strong.blog-title {
         font-family: $Hoefler;
         padding: 0.8em 0px 0.8em 0px;
         // border-top: 1px solid $darkerGray;
-        color: darken(#3985d0, 10%);
+        color: #296bad;
         list-style-type: none;
         text-align: justify;
         transition-property: text-indent, background-color;
@@ -334,11 +334,12 @@ strong.blog-title {
         transition-delay: 0.1s;
         // font-weight: bold;
         letter-spacing: 0.5px;
-        margin-top: 10px;
+        margin-top: 2px;
         margin-right: 15px;
+        border-radius: 5px;
         &:hover {
-          background: #fff;
-          color: #0a3a3a;
+          background: #296bad;
+          color: #fff;
           text-decoration: none;
           text-indent: 20px;
         }
@@ -350,10 +351,12 @@ strong.blog-title {
       }
       span.datelist {
         text-align: right;
-        color: #fff;
-        background: #0a3a3a;
+        color: #0a3a3a;
         text-align: right;
         font-size: 18px;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
@@ -396,8 +399,8 @@ footer {
     margin-top: 50px;
     padding: 40px 10px;
     text-align: center;
-    border: 1px solid #0a3a3a;
-    box-shadow: 5px 5px #0a3a3a ;
+    border: 1px solid #296bad;
+    box-shadow: 2px 2px 2px 0px #296bad;
     border-radius: 5px;
     margin-bottom: 50px;
   div {
