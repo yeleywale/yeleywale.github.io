@@ -14,6 +14,7 @@ layout: default
 </script>
 
 <div class="tags">
+  <span class="topics">Topics:</span>
   {% for tag in site.data.tags %}
 	  <a href="/tags/{{ tag.name }}"> {{ tag.name }} </a>
   {% endfor %}
@@ -21,7 +22,7 @@ layout: default
 </div>
 
 <div class="posts container">
-  
+  <h3>Recent Posts: </h3>
   <ul>
     {% for post in site.posts %}
     <a href="{{ site.baseurl }}{{ post.url }}" class="post-list">

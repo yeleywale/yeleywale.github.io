@@ -11,14 +11,15 @@ $blue: #4183C4;
 // Grays
 // $black: #000;
 $black: #FFFFFF;
+$highlight: #2bbc8a;
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
-$mainbg: #eee;
+$mainbg: #1d1f21;
 $foreground: #D8D8D8;
-$textColor: #FFFFFF;    
+$textColor: #c9cacc;
 // Font stacks
 $Hoefler: Hoefler,
 "Helvetica Neue",
@@ -32,6 +33,7 @@ Arial,
 sans-serif;
 $georgia: Georgia,
 serif;
+
 // Mobile breakpoints
 @mixin mobile {
     @media screen and (max-width: 640px) {
@@ -39,3 +41,4 @@ serif;
     }
 }
 
+$shadow-highlight: .7px .7px gainsboro;
