@@ -1,35 +1,34 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 published: true
 ---
- I'm Akinwale Alexander. A software developer, computer programmer, computer scientist. Enjoy writing software applications and designing solutions to problems organization face on a daily basis. Ever since I discovered the powers to be had from talking to computers, I have written code in many languages, from Java to OCaml to Assembly. Along the way I have gained mastery in using a few libraries and frameworks. I have learned the skill of designing systems, and understanding how other systems were architected. I have piggybacked on giants and luminaries who have continuously pushed the boundary of these fields through sheer ingenuity. I find the ability to harness these powers and to transform them into useful industry that can be of benefit to the world at large a great skill in and of itself. Programming from the onset had been an expression of love for computers and technology. I don't let anything erodes this feeling.
 
-I'm enthusiastic about functional programming. My primary language is, but not limited to, Scala. I however understand that it would take some years for any drastic change to take place in the business world. Ergo, my OOAD techniques are still intact. Both can actually exist in the same codebase.
+<img class="img_about" src="{{ site.baseurl }}/images/assets/aboutme.jpg" alt="aboutme_img"/>
+
+
+ HI! :open_hands: I'm **Akinwale Alexander**. A software engineer, teacher, creative. I blog about software development with a particular focus on **Scala** and its ecosystem (including but not limited to **Akka-stream**, **Play framework**, **Kafka**), and a dash of functional programming(**ZIO**, **Cats-Effect**). All of which I have spent appreciable amount of time hacking and engineering software applications for a few companies in Nigeria. In my spare time, I like to contribute to **open source** projects; **read books** :books:, **blogs**, **papers**, etc, some of which has nothing to do with my discipline. I'm a huge sports enthusiast, It wouldn't be anything out of the ordinary to catch me on a matchday supporting **Chelsea F.C.** while they run rings around **Liverpool**, or biking :mountain_biking_man: on the sand dunes of the **Namib desert**. I'm a **gamer**, I'm currently accepting challenges for **Playstation Pro Evolution Soccer** :soccer:, fancy your chances?, send :rocket: me your gauntlet [here](https://alexakinwale.com), you can be sure I would pick it up.
+ 
+ I'm enthusiastic about **functional programming**. My primary language is, but not limited to, **Scala**(I have written tons of codes in **Java**, **JavaScript** and **C#** as well). I however understand that it would take some years for any drastic change to take place in the business world. Ergo, my **OOAD** techniques are still intact,and I still put them to good use when business imperatives trumps my predilection. 
 
 ### My Motivation
-I'm motivated by fear. I hate being scared to do something as long as it has a consensual benefit. 
-No task is ever huge for me. I don't see myself as talented, I see myself as someone who excel at a ridiculously sickening work ethic. The separation of talent and skill is something that I always try to come to terms with. No matter how talented you are, your talent won't take you anywhere if you don't have skills. So I keep honing my skill, and I would rather people see it as talent than for the talent to atrophy or misused.
+I'm motivated by **fear**. No task is ever huge for me. I don't see myself as talented, I see myself as someone who excels at a ridiculously sickening work ethic. The separation of talent and skill is something that I always try to come to terms with. No matter how talented one is, skills is talent that has been trained. So I keep honing my skill, and I would rather people see it as talent than for the talent to atrophy or be misused.
 
-### Listening
-Lately I have found a way to be nice to people And that was by honing my ability to listen more to people. Listening is not just about being silent, and just allowing the other person to do the talking while I hold on to my truth, it is about opening up your mind and accepting people's mental projection without making value judgement about their opinion.
+### Social Nanoscaling
 
+This is is the term I use to regain situation awareness. having a good knowledge of the roles and responsiblities different actors play in the society helps me putting the little me into a big context. The best way I can make things work out for me is to detach my emotion from a situation, trying as much as possible to see everybody as a unique addition to my capacity. By ensuring everyone see the importance of their work, no matter how small, people perform at their optimum, and are ready to make sacrifice for the advancement of an objective
 
-### Debugging my brain
-I wake up in the morning, turn up my laptop, put the fingers on the keyboard, and type the crap out of my brain before the start of the day. I do that without thinking too much about what I am putting down. I just let them all come out. There is a an unalloyed joy that comes with that when you have the opportunity to get things down without thinking it gives me the opportunity to put my brain in the stream of consciousness mode for a while.
+### Politics
 
-### Microscale thinking
-I call it "thinking strategically individually on the microscale" -- putting the little me into a big contex. The ability to remove yourself from a any situation that involves many actors, make a clone of yourself and envision your clone communicate and interact with other actors. How would I want my clone to act? What are my expectations of me? This has been one of the most useful tooling in my box, it helps me detach my emotions, and control my temperament when in many difficult social situations, in addition, the roles I play in the society, at work, among friends become less complex.
+My political persuasion is **Nigerian** :nigeria:. Meaning that politics in any form may never benefit the populace. I swing between the left and right when it's logically convenient. I'm not a charlatan though, and I'm not liberal or conservative as well. I just have an **Occam's Razor** that I carry around, I call it **Yelism**.
 
-I used to be an optimist. Right now I always hope for the best and prepare for the worst by practicing optimism on the short term and pessimism on the short term. This mindset have helped me in triaging task going from the bleakest to the rosiest based on time required to achieve them.
+> My life goal is to get better everyday at judging and dealing with people. 
 
-
-I'm an introvert trying the best I can to meddle in other people's business.
-
-I enjoy reading inspiring books, visiting exciting places to meet people with a different culture and persuasion.
-
-My political persuasion is Nigerian. Meaning I swing between the left and right when it's logically convenient. I'm not a charlatan though, and I'm not liberal or conservative as well. I just have an Occam's Razor that I carry around, I call it Yelism.    
 ### Contact me
+You can send me a mail via :email: [waleander@gmail.com](mailto:waleander@gmail.com). You can also contact me on [@techyfingers](https://twitter.com/techyfingers).
 
-[waleander@gmail.com](mailto:waleander@gmail.com)
+### Bio 
+> _Alex is a software developer who has been writing software applications for over a decade now.  He started as an enthusiast cutting his teeth in the Java programming ecosystem in the late 2000s. He wrote many software applications ranging from embedded systems to a JSP web application. He would later earn his laurels designing, developing and deploying enterprise wide applications on the J2EE platform using Java on the backend and Javascript for scripting on the frontend. In his quest to find better ways to write programs, he started using Scala. He has since then been using Scala to craft most of his applications. He believes Scala provides a balance between applicability and terseness. He also sometimes writes program in JavaScript and python._
+
+
