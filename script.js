@@ -1,15 +1,12 @@
 
-function toggleScroll() {
-    const hilite = document.getElementsByClassName('highlight');
-    
-    for (let index = 0; index < hilite.length; index++) {
-        console.log(hilite[index])
-        const element = hilite[index];
-        if(element.height > 100) {
-            element.style.scrollY = "scroll";
-        }        
+const hilite = document.querySelectorAll('pre.highlight');
+console.log(hilite)
+
+hilite.forEach(element => {
+    if (element.getBoundingClientRect().height >= 300) {
+        element.style.cssText = "height: 300px";
+        element.style.overflowY = "scroll";
+    } else {
+        element.style.overflowY = "noscroll"
     }
-}
-
-toggleScroll();
-
+});

@@ -210,7 +210,8 @@ img {
   }
 }
 
-.tags {
+span.tags {
+  float: right;
   margin: 0px auto 40px auto;
   text-align: center;
   div {
@@ -226,6 +227,33 @@ img {
     color: $highlight;
     font-size: 14px;
     color: gainsboro;
+    &:hover {
+      text-decoration: none;
+      color: $textColor;
+    }
+  }
+}
+
+div.tags {
+  margin: 0px auto 40px auto;
+  text-align: center;
+
+  div {
+    margin-bottom: 16px;
+
+    span {
+      color: $textColor;
+      padding: 5px 15px 5px 15px;
+      font-style: italic;
+    }
+  }
+
+  a {
+    padding: 6px;
+    color: $textColor;
+    font-size: 14px;
+    color: $textColor;
+
     &:hover {
       text-decoration: none;
       color: $textColor;
@@ -279,21 +307,26 @@ nav {
   }
 }
 
-.navb a {
-  float: right;
-  padding: 2px 6px 2px 6px;
-  
-  color: $highlight;
-  font-family: $Hoefler;
-  border-left: 1px dotted $highlight;
-  &:hover {
-    color: $textColor;
-  }
+.navb {
+  margin-top: 22px;
+   a {
+     float: right;
+     padding: 2px 8px 2px 8px;
+     line-height: 6px;
+     color: $highlight;
+     font-family: $Hoefler;
+     border-left: 1px dotted $highlight;
 
-  &:last-child {
-    border-left: none;
-  }
+     &:hover {
+       color: $textColor;
+     }
+
+     &:last-child {
+       border-left: none;
+     }
+   }
 }
+
 
 //
 // .main
@@ -418,12 +451,12 @@ footer {
     color: $highlight;
     margin-bottom: 40px;
     text-align: center;
-    font-size: 46px;
+    font-size: 35px;
   }
   .entry {
     h2 {
       color: $highlight;
-      margin-top: 40px;
+      margin-top: 30px;
     }
     color: $textColor;
   }
