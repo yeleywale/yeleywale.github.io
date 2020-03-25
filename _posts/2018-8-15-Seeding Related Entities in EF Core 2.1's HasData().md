@@ -22,7 +22,6 @@ protected override void OnModelCreating(ModelBuilder bldr)
 In this example, I'm just setting the max length of the name to be 100 characters long (and we could have done this with an attribute too if that's your kind of thing).
 
 But this is where we can use HasData to add seeded data:
-
 ```csharp
 protected override void OnModelCreating(ModelBuilder bldr)
 {
