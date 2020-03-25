@@ -16,7 +16,7 @@ layout: default
 <div class="tags">
   <span class="topics">Topics:</span>
   {% for tag in site.data.tags %}
-	  <a href="/tags/{{ tag.name }}"> {{ tag.name }} </a>
+	  <a href="/tags/{{ tag.name }}"> {{ tag.name | capitalize}} </a>
   {% endfor %}
 
 </div>
