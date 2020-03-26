@@ -250,9 +250,8 @@ div.tags {
 
   a {
     padding: 6px;
-    color: $textColor;
+    color: $highlight;
     font-size: 14px;
-    color: $textColor;
 
     &:hover {
       text-decoration: none;
@@ -449,7 +448,7 @@ footer {
 .post {
   h1 {
     color: $highlight;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     text-align: center;
     font-size: 35px;
   }
@@ -463,13 +462,22 @@ footer {
 }
 
 .page {
-  color: #0a3a3a;
-  h1 {
-    color: darken(#3985d0, 10%);
+  color: $textColor;
+  h1, h2, h3 {
+    color: $highlight;
   }
-}
 
-.tags {
+  strong {
+    color: $highlight;
+  }
+
+  .img_about {
+        &:first-child {
+          float: left;
+          margin-right: 60px;
+          height: 200px;
+      }
+  }
 
 }
 
