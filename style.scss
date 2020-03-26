@@ -164,7 +164,7 @@ img {
 .masthead {
 
   margin-top: 30px;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
   padding: 20px 0;
   a {
     color: $textColor;
@@ -180,7 +180,7 @@ img {
   font-weight: 900;
   text-decoration: none ;
   line-height: 6em;
-  text-shadow: $shadow-highlight;
+  // text-shadow: $shadow-highlight;
   letter-spacing: 1px;
 }
 
@@ -235,12 +235,10 @@ span.tags {
 }
 
 div.tags {
-  margin: 0px auto 40px auto;
+  margin: 0px auto 0 auto;
   text-align: center;
 
   div {
-    margin-bottom: 16px;
-
     span {
       color: $textColor;
       padding: 5px 15px 5px 15px;
@@ -339,7 +337,6 @@ strong.blog-title {
   h3 {
     color: $textColor;
     margin-bottom: 20px;
-    text-shadow: $shadow-highlight;
   }
   padding: 15px 30px 15px 30px;
   ul {
@@ -384,6 +381,13 @@ strong.blog-title {
   border-bottom: none;
 }
 
+.short-bio {
+  color: $textColor;
+  background-color: #343a40;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
 .post {
   font-family: $Hoefler;
   font-size: 16px;
@@ -421,15 +425,15 @@ footer {
 }
 
 .footer-links {
-  text-align: left;
+  text-align: right;
   margin-right: 20px;
   .footer-links-text {
-    font-size: 18px;
+    font-size: 30px;
     color: $highlight;
   }
   a {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
     text-indent: 10px;
     color: $textColor;
     &:hover {
