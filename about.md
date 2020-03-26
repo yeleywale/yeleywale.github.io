@@ -24,6 +24,7 @@ This is is the term I use to regain situation awareness. having a good knowledge
 My political persuasion is **Nigerian** :nigeria:. Meaning that politics in any form may never benefit the populace. I swing between the left and right when it's logically convenient. I'm not a charlatan though, and I'm not liberal or conservative as well. I just have an **Occam's Razor** that I carry around, I call it **Yelism**.
 
 > My life goal is to get better everyday at judging and dealing with people. 
+> A talent for following the ways of yesterday is not sufficient to improve the world today
 
 ### Contact me
 You can send me a mail via :email: [waleander@gmail.com](mailto:waleander@gmail.com). You can also contact me on [@techyfingers](https://twitter.com/techyfingers).
