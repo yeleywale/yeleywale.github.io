@@ -14,15 +14,19 @@ layout: default
 </script>
 
 <div class="container short-bio">
-  Hi! I am <strong>Akinwale Alexander &#x1F913; </strong>. A software engineer, an expert using languages such as <strong>Scala</strong>, <strong>Kafka</strong>, <strong>Akka-stream</strong>,<strong>ZIO</strong> , etc, for the greater good of humanity. I'm a contributor on various open source projects. A technology advocate for Scala in Africa, and I stand to push the envelope of the programing world as far as I can through collaboration, helping, and .
+  Hi! I am <strong>Akinwale Alexander &#x1F913; </strong>. A software engineer, an expert using languages such as <strong><a href="https://www.scala-lang.org/">Scala</a></strong>, <strong><a href="https://apache.kafka.org">Kafka</a></strong>, <strong><a href="https://akka.io">Akka-stream</a></strong>, <strong><a href="https://zio.dev">ZIO</a></strong> , etc, for the greater good of humanity. I'm a contributor on various open source projects. A technology advocate for Scala in Africa, and I stand to push the envelope of the programing world as far as I can through collaboration, helping, and . <strong>All views expressed here are mine and doesn't in any way represent my company's stance.</strong>
 </div>
 
-<div class="tags container">
-  <span class="topics">Topics:</span>
-  {% for tag in site.data.tags %}
-	  <a href="/tags/{{ tag.name }}"> {{ tag.name | capitalize}} </a>
-  {% endfor %}
-
+<div class="container">
+  <div class="row">
+    <div class=" container tags col-lg-9 col-lg-offset-3">
+      <span class="topics">Topics:</span>
+      {% for tag in site.data.tags %}
+      <a href="/tags/{{ tag.name }}"> {{ tag.name | capitalize}} </a>
+      {% endfor %}
+    
+    </div>
+  </div>
 </div>
 
 <div class="posts container">
