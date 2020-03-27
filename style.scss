@@ -600,7 +600,7 @@ html {
     }
   }
    @media (min-width: 576px) {
-     font-size: 16px;x
+     font-size: 16px;
 
      .site-info {
        .site-name {
@@ -639,8 +639,8 @@ html {
      }
    }
 
-   @media screen and (max-width: 320px) {
-     font-size: 16px;
+   @media screen and (min-width: 320px) {
+     font-size: 14px;
 
      .code-area {
        font-size: 6vw;
@@ -651,6 +651,46 @@ html {
        padding-left: 10px;
        line-height: 6.5vw;
      }
+
+      .site-info {
+        .site-name {
+          margin: 0;
+          font-weight: 400;
+          font-size: 1.2rem;
+          letter-spacing: .5px;
+          padding: 10px 8px 10px 8px;
+        }
+      }
+
+      .navb {
+        //  text-align: center;
+        //  margin: 0 auto 0 auto;
+        padding-left: 0;
+
+        a {
+          margin: 0 auto 0 auto;
+          font-size: .9rem;
+          padding: 2px 4px 2px 4px;
+        }
+      }
+
+      .footer-about {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .footer-links {
+        margin-right: 0;
+        text-align: center;
+
+        a {
+          font-size: 18px;
+
+          i {
+            font-size: 18px
+          }
+        }
+      }
    }
 
   // // Extra large devices (large desktops, 1200px and up)
