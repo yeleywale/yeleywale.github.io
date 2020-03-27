@@ -1,9 +1,6 @@
----
----
+--- 
+--- 
 
-//
-// IMPORTS
-//
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
@@ -15,507 +12,651 @@
 /**************/
 
 html {
-  font-size: 100%;
-}
-
-body {
-  background: $mainbg !important;
-  font: 18px/1.4 $Hoefler;
-  color: $textColor;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $Hoefler;
-  color: $highlight;
-  font-weight: bold;
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
   font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
-}
-
-a {
-  color: $highlight;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover,
-  &:active {
-    color: $highlight;
-  }
-}
-
-ul,
-ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul,
-ul ol,
-ul ul,
-ol ol {
-  margin: 0;
-}
-
-ul ul,
-ol ul {
-  list-style-type: circle;
-}
-
-em,
-i {
-  font-style: italic;
-}
-
-strong,
-b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
-.date {
-  font-style: italic;
-  color: $highlight;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/*********************/
-
-/* LAYOUT / SECTIONS */
-
-/*********************/
-
-.masthead {
-
-  margin-top: 30px;
-  margin-bottom: 40px;
-  padding: 20px 0;
-  a {
+  body {
+    background: $mainbg !important;
+    font: 18px/1.4 $Hoefler;
     color: $textColor;
   }
-  @include mobile {
-    text-align: center;
-  }
-}
 
-.topics {
-  font-size: 22px;
-  color: $textColor;
-  font-weight: 900;
-  text-decoration: none ;
-  line-height: 6em;
-  // text-shadow: $shadow-highlight;
-  letter-spacing: 1px;
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-  @include mobile {
-    float: none;
-    display: block;
+  .container {
     margin: 0 auto;
   }
-  img {
-    border-radius: 5px;
-  }
-}
 
-.site-info {
-  nav {
-    color: $textColor;
-  }
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-span.tags {
-  float: right;
-  margin: 0px auto 40px auto;
-  text-align: center;
-  div {
-    margin-bottom: 16px;
-    span {
-      color: $textColor;
-      padding: 5px 15px 5px 15px;
-      font-style: italic;
-    }
-  }
-  a {
-    // padding: 6px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $Hoefler;
     color: $highlight;
-    font-size: 14px;
-    color: gainsboro;
-    &:hover {
-      text-decoration: none;
-      color: $textColor;
-    }
-  }
-}
-
-div.tags {
-  margin: 0px auto 0 auto;
-  text-align: center;
-
-  div {
-    span {
-      color: $textColor;
-      padding: 5px 15px 5px 15px;
-      font-style: italic;
-    }
+    padding: 0;
+    // @include mobile {
+    //   line-height: 1.4;
+    // }
   }
 
-  a {
-    padding: 6px;
-    color: $highlight;
-    font-size: 14px;
+  h1 {
+    font-size: 2rem;
 
-    &:hover {
-      text-decoration: none;
-      color: $textColor;
-    }
-  }
-}
-
-.site-name {
-  text-shadow: $shadow-highlight;
-  margin: 0;
-  cursor: pointer;
-  font-family: $Hoefler;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-  padding: 10px 10px 10px 30px;
-  text-transform: uppercase;
-  width: 500px;
-  a {
-    color: $textColor;
-    letter-spacing: 2px;
-    &:hover {
-      color: $highlight;
-      text-decoration: none;
-    }
-  }
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $textColor;
-  font-size: 16px;
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  // margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $Hoefler;
-  font-size: 18px;
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-  @include mobile {
-    margin: 0 10px;
-    color: $textColor;
-  }
-}
-
-.navb {
-  margin-top: 22px;
-   a {
-     float: right;
-     padding: 2px 8px 2px 8px;
-     line-height: 6px;
-     color: $highlight;
-     font-family: $Hoefler;
-     border-left: 1px dotted $highlight;
-
-     &:hover {
-       color: $textColor;
-     }
-
-     &:last-child {
-       border-left: none;
-     }
-   }
-}
-
-
-//
-// .main
-//
-strong.blog-title {
-  padding-left: 0px;
-  font-weight: bold;
-}
-
-.posts {
-  h3 {
-    color: $textColor;
-    margin-bottom: 20px;
-  }
-  padding: 15px 30px 15px 30px;
-  ul {
     a {
-      text-decoration: none;
-      li {
-        font-size: 20px;
-        font-family: $Hoefler;
-        padding: 0.4em 0px 0.4em 0px;
-        color: #c9cacc;
-        list-style-type: none;
-        text-align: justify;
-        transition-property: text-indent, background-color;
-        transition-duration: 0.5s;
-        transition-delay: 0.1s;
-        // font-weight: bold;
-        letter-spacing: 0.5px;
-        margin-top: 1px;
-        margin-right: 15px;
-        &:hover {
-          color: #fff;
-          text-decoration: underline;
-          text-indent: 20px;
-        }
-      }
-     
-      span.datelist {
-        text-align: right;
-        color: $highlight;
-        text-align: right;
-        font-size: 18px;
-        &:hover {
-          color: #fff;
-        }
-      }
+      color: inherit;
     }
   }
-}
 
-.posts > .post:last-child {
-  // padding-bottom: 1em;
-  border-bottom: none;
-}
+  h2 {
+    font-size: 24px;
+  }
 
-.short-bio {
-  color: $textColor;
-  background-color: #343a40;
-  background-image: linear-gradient(to right, darken($highlight, 40%), #343a40);
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: 2px 2px 2px #343a40;
-}
+  h3 {
+    font-size: 20px;
+  }
 
-.post {
-  font-family: $Hoefler;
-  font-size: 16px;
-  blockquote {
-    margin: 1.8em 0.8em;
-    padding: 0.1em 1em;
+  h4 {
+    font-size: 18px;
     color: $gray;
-    font-size: 22px;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  a {
+    color: $highlight;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      color: $highlight;
+    }
+  }
+
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ol ul,
+  ul ol,
+  ul ul,
+  ol ol {
+    margin: 0;
+  }
+
+  ul ul,
+  ol ul {
+    list-style-type: circle;
+  }
+
+  em,
+  i {
     font-style: italic;
   }
-  .comments {
-    margin-top: 10px;
+
+  strong,
+  b {
+    font-weight: bold;
   }
-  .read-more {
+
+  img {
+    max-width: 100%;
+  }
+
+  // Fixes images in popup boxes from Google Translate
+  .gmnoprint img {
+    max-width: none;
+  }
+
+  .date {
+    font-style: italic;
+    color: $highlight;
+  }
+
+  // Specify the color of the selection
+  ::-moz-selection {
+    color: $black;
+    background: $lightGray;
+  }
+
+  ::selection {
+    color: $black;
+    background: $lightGray;
+  }
+
+  // Nicolas Gallagher's micro clearfix hack
+  // http://nicolasgallagher.com/micro-clearfix-hack/
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
+  /*********************/
+
+  /* LAYOUT / SECTIONS */
+
+  /*********************/
+
+  .masthead {
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+
+    a {
+      color: $textColor;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  .topics {
+    font-size: 22px;
+    color: $textColor;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  .site-avatar {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+
+    @include mobile {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  .site-info {
+    nav {
+      color: $textColor;
+    }
+
+    @include mobile {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  span.tags {
+    float: right;
+    margin: 0px auto 40px auto;
+    text-align: center;
+
+    div {
+      margin-bottom: 16px;
+
+      span {
+        color: $textColor;
+        padding: 5px 15px 5px 15px;
+        font-style: italic;
+      }
+    }
+
+    a {
+      // padding: 6px;
+      color: $highlight;
+      font-size: 14px;
+      color: gainsboro;
+
+      &:hover {
+        text-decoration: none;
+        color: $textColor;
+      }
+    }
+  }
+
+  div.tags {
+    margin: 80px auto 30px auto;
+    text-align: center;
+
+
+
+    div {
+      span {
+        color: $textColor;
+        padding: 5px 15px 5px 15px;
+        font-style: italic;
+      }
+    }
+
+    a {
+      padding: 6px;
+      color: $highlight;
+      font-size: 14px;
+      font-weight: 300;
+
+      &:after {
+        content: ".";
+        font-weight: 800;
+        color: $textColor;
+        margin-left: 3px;
+      }
+
+      &:last-child {
+        &:after {
+          content: "";
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $textColor;
+      }
+    }
+  }
+
+  .site-name {
+    margin: 0;
+    cursor: pointer;
+    font-family: $Hoefler;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding: 10px 10px 10px 30px;
     text-transform: uppercase;
-    font-size: 15px;
+    // width: 500px;
+
+    a {
+      color: $textColor;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: $highlight;
+        text-decoration: none;
+      }
+    }
   }
-}
 
-.outer-footer {
-  padding: 0 !important;
-  margin-bottom: 30px;
-  margin-top: 60px;
-}
+  .site-description {
+    margin: -5px 0 0 0;
+    color: $textColor;
+    font-size: 16px;
 
-footer {
+    @include mobile {
+      margin: 3px 0;
+    }
+  }
+
+  nav {
+    // margin-top: 23px; // @TODO: Vertically middle align
+    font-family: $Hoefler;
+    font-size: 18px;
+
+    @include mobile {
+      float: none;
+      margin-top: 9px;
+      display: block;
+      font-size: 16px;
+    }
+
+    @include mobile {
+      margin: 0 10px;
+      color: $textColor;
+    }
+  }
+
+  .navb {
+    margin-top: 22px;
+
+    a {
+      float: right;
+      padding: 2px 15px 2px 15px;
+      line-height: 6px;
+      color: $highlight;
+      font-family: $Hoefler;
+      border-left: 1px dotted $highlight;
+
+      &:hover {
+        color: $textColor;
+        text-decoration: none;
+      }
+
+      &:last-child {
+        border-left: none;
+      }
+    }
+  }
+
+
+  //
+  // .main
+  //
+  strong.blog-title {
+    padding-left: 0px;
+    font-weight: bold;
+  }
+
+  .posts {
+    h3 {
+      color: $textColor;
+      margin-bottom: 20px;
+      font-weight: bolder;
+    }
+
+    padding: 15px 30px 15px 30px;
+
+    ul {
+      a {
+        text-decoration: none;
+
+        li {
+          font-size: 20px;
+          font-family: $Hoefler;
+          padding: 0.4em 0px 0.4em 0px;
+          color: #c9cacc;
+          list-style-type: none;
+          text-align: justify;
+          transition-property: text-indent, background-color;
+          transition-duration: 0.5s;
+          transition-delay: 0.1s;
+          // font-weight: bold;
+          margin-top: 1px;
+          margin-right: 15px;
+
+          .blog-title {
+            &:hover {
+              transition-property: text-indent,
+              background-color;
+              transition-duration: 0.5s;
+              transition-delay: 0.3s;
+              color: #fff;
+              text-decoration: none;
+              text-indent: 20px;
+            }
+          }
+        }
+
+        span.datelist {
+          text-align: right;
+          color: $highlight;
+          text-align: left;
+          font-size: 18px;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .posts>.post:last-child {
+    // padding-bottom: 1em;
+    border-bottom: none;
+  }
+
+  .short-bio {
+    color: $textColor;
+    background-color: #343a40;
+    background-image: linear-gradient(to right, darken($highlight, 40%), #343a40);
+    padding: 20px;
+    box-shadow: 2px 2px 2px #343a40;
+    width: 75%;
+  }
+
+  .post {
+    font-family: $Hoefler;
+    font-size: 16px;
+
+
+    blockquote {
+      margin: 1.8em 0.8em;
+      padding: 0.1em 1em;
+      color: $gray;
+      font-size: 22px;
+      font-style: italic;
+    }
+
+    .comments {
+      margin-top: 10px;
+    }
+
+    .read-more {
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+  }
+
+  .outer-footer {
+    padding: 0 !important;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+
+  footer {
     text-align: center;
     // margin-bottom: 50px;
     padding-bottom: 50px;
     padding-top: 100px;
-  div {
-    margin-top: 10px;
-    text-align: center;
-  }
-}
 
-.footer-links {
-  text-align: right;
-  margin-right: 20px;
-  .footer-links-text {
-    font-size: 30px;
-    color: $highlight;
-  }
-  a {
-    font-weight: 900;
-    font-size: 30px;
-    text-indent: 10px;
-    color: $textColor;
-    &:hover {
-      color: $highlight;
+    div {
+      margin-top: 10px;
+      text-align: center;
     }
   }
-}
 
-.footer-about {
-  font-family: $Hoefler;
-  font-size: 18px;
-  color: $highlight;
-  vertical-align: baseline;
-}
+  .footer-links {
+    text-align: right;
+    margin-right: 20px;
 
-.post {
-  h1 {
-    color: $highlight;
-    margin-bottom: 60px;
-    text-align: center;
-    font-size: 35px;
-  }
-  .entry {
-    h2 {
+    .footer-links-text {
+      font-size: 30px;
       color: $highlight;
-      margin-top: 30px;
     }
-    color: $textColor;
-  }
-}
 
-.page {
-  color: $textColor;
-  h1, h2, h3 {
-    color: $highlight;
-  }
+    a {
+      font-weight: 900;
+      font-size: 30px;
+      text-indent: 10px;
+      color: $textColor;
 
-  strong {
-    color: $highlight;
-  }
-
-  .img_about {
-        &:first-child {
-          float: left;
-          margin-right: 60px;
-          height: 200px;
+      &:hover {
+        color: $highlight;
       }
+    }
   }
 
-}
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
-
-// Not found
-/* Styles of the 404 page of my website. */
-
-.code-area {
-  span {
-    display: block;
+  .footer-about {
+    font-family: $Hoefler;
+    font-size: 18px;
+    color: $highlight;
+    vertical-align: baseline;
   }
-  color: #d3d7de;
-  font-family: "Courier new";
-  font-size: 25px;
-  line-height: 1.5em;
-  cursor: default;
-  width: 320px;
-  margin: auto;
-}
 
-@media screen and (max-width: 320px) {
+  .post {
+    h1 {
+      color: $highlight;
+      margin-bottom: 60px;
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .entry {
+      h2 {
+        color: $highlight;
+        margin-top: 40px;
+      }
+
+      color: $textColor;
+    }
+  }
+
+  .page {
+    color: $textColor;
+
+    h1,
+    h2,
+    h3 {
+      color: $highlight;
+    }
+
+    strong {
+      color: $highlight;
+    }
+
+    .img_about {
+      &:first-child {
+        float: left;
+        margin-right: 60px;
+        height: 200px;
+      }
+    }
+
+  }
+
+  // Settled on moving the import of syntax highlighting to the bottom of the CSS
+  // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+  @import "highlights";
+  @import "svg-icons";
+
+  // Not found
+  /* Styles of the 404 page of my website. */
+
   .code-area {
-    font-size: 6vw;
-    min-width: auto;
-    width: 95%;
+    span {
+      display: block;
+    }
+
+    color: #d3d7de;
+    font-family: "Courier new";
+    font-size: 25px;
+    line-height: 1.5em;
+    cursor: default;
+    width: 320px;
     margin: auto;
-    padding: 5px;
-    padding-left: 10px;
-    line-height: 6.5vw;
   }
+
+
+
+
+  
+
+ 
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    font-size: 16px;
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+    .site-info {
+      .site-name {
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: .5px;
+        padding: 10px 10px 10px 10px;
+      }
+
+    }
+
+    .navb {
+      text-align: left;
+      font-size: 14px;
+
+      a {
+        font-size: 1rem;
+        padding: 2px 7px 2px 7px;
+      }
+    }
+
+    .post {
+      h3 {
+        font-weight: bolder;
+      }
+    }
+  }
+   @media (min-width: 576px) {
+     font-size: 16px;x
+
+     .site-info {
+       .site-name {
+          margin: 0;
+          font-weight: 400;
+          font-size: 1.2rem;
+          letter-spacing: .5px;
+          padding: 10px 8px 10px 8px;
+       }
+     }
+     .navb {
+      //  text-align: center;
+      //  margin: 0 auto 0 auto;
+       padding-left: 0;
+       a {
+         margin: 0 auto 0 auto;
+         font-size: .9rem;
+         padding: 2px 4px 2px 4px;
+       }
+     }
+
+     .footer-about {
+       text-align: left;
+       font-size:16px;
+     }
+
+     .footer-links {
+       margin-right: 0;
+       text-align: right;
+       a {
+         font-size: 16px;
+         i {
+           font-size: 16px
+         }
+       }
+     }
+   }
+
+   @media screen and (max-width: 320px) {
+     font-size: 16px;
+
+     .code-area {
+       font-size: 6vw;
+       min-width: auto;
+       width: 95%;
+       margin: auto;
+       padding: 5px;
+       padding-left: 10px;
+       line-height: 6.5vw;
+     }
+   }
+
+  // // Extra large devices (large desktops, 1200px and up)
+  // @media (min-width: 1200px)
+  // {
+
+  // }
+
 }

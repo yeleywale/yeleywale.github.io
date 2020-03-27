@@ -31,8 +31,9 @@ layout: default
     {% for post in site.posts %}
     <a href="{{ site.baseurl }}{{ post.url }}" class="post-list">
         <li class="row">
-            <span class="col-lg-9 blog-title">{{ post.title }}</span>
-            <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
+          <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
+          <span class="col-lg-9 blog-title">{{ post.title }}</span>
+            
         </li>
     </a>
     {% endfor %}
