@@ -251,6 +251,7 @@ html {
       color: $highlight;
       font-size: 16px;
       font-weight: 300;
+      letter-spacing: .5px;
 
       &:after {
         content: ".";
@@ -333,6 +334,7 @@ html {
       color: $highlight;
       font-family: $Hoefler;
       border-left: 1px dotted $highlight;
+      letter-spacing: 1px;
 
       &:hover {
         color: $textColor;
@@ -497,12 +499,15 @@ html {
       margin-bottom: 60px;
       margin-top: 80px;
       text-align: center;
+      letter-spacing: 1px;
     }
 
     .entry {
+      letter-spacing: .5px;
       h2 {
         color: $highlight;
         margin-top: 40px;
+        letter-spacing: .7px;
       }
 
       color: $textColor;
