@@ -8,5 +8,6 @@ hilite.forEach(element => {
         element.style.overflowY = "scroll";
     } else {
         element.style.overflowY = "noscroll"
+        element.style.cssText = "box-shadow: 2px 0px 1px #e5bf44";
     }
 });
