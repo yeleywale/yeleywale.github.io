@@ -6,6 +6,15 @@
     src: url('./Hoefler-regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Crimson';
+    src: url('https://fonts.googleapis.com/css?family=Crimson+Pro');
+}
+@font-face {
+    font-family: 'crimson-text';
+    src: url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+}
+
 // Colors
 $blue: #4183C4;
 // Grays
@@ -21,7 +30,7 @@ $mainbg: #1d1f21;
 $foreground: #D8D8D8;
 $textColor: #c9cacc;
 // Font stacks
-$Hoefler: Hoefler,
+$Hoefler: crimson-text,
 "Helvetica Neue",
 sans-serif;
 $helvetica: Helvetica,

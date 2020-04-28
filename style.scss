@@ -12,10 +12,10 @@
 /**************/
 
 html {
-  font-size: 20px;
+  font-size: 16px;
   body {
     background: $mainbg !important;
-    font: 18px/1.4 $Hoefler;
+    font: 16px/1.4 $Hoefler;
     color: $textColor;
   }
 
@@ -171,7 +171,7 @@ html {
   }
 
   .topics {
-    font-size: 22px;
+    font-size: 18px;
     color: $textColor;
     text-decoration: none;
     letter-spacing: 1px;
@@ -247,9 +247,8 @@ html {
     a {
       padding: 6px;
       color: $highlight;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
-      letter-spacing: .5px;
 
       &:after {
         content: ".";
@@ -307,13 +306,13 @@ html {
   nav {
     // margin-top: 23px; // @TODO: Vertically middle align
     font-family: $Hoefler;
-    font-size: 18px;
+    font-size: 14px;
 
     @include mobile {
       float: none;
       margin-top: 9px;
       display: block;
-      font-size: 16px;
+      font-size: 14px;
     }
 
     @include mobile {
@@ -371,7 +370,7 @@ html {
         text-decoration: none;
 
         li {
-          font-size: 20px;
+          font-size: 16px;
           font-family: $Hoefler;
           padding: 0.4em 0px 0.4em 0px;
           margin-left: auto;
@@ -402,7 +401,7 @@ html {
           text-align: right;
           color: $highlight;
           text-align: left;
-          font-size: 18px;
+          font-size: 14px;
 
           &:hover {
             color: #fff;
@@ -436,7 +435,7 @@ html {
       margin: 1.8em 0.8em;
       padding: 0.1em 1em;
       color: $gray;
-      font-size: 22px;
+      font-size: 20px;
       font-style: italic;
     }
 
@@ -491,7 +490,7 @@ html {
 
   .footer-about {
     font-family: $Hoefler;
-    font-size: 18px;
+    font-size: 16px;
     color: $highlight;
     text-align: left;
   }
@@ -506,11 +505,9 @@ html {
     }
 
     .entry {
-      letter-spacing: .5px;
       h2 {
         color: $highlight;
         margin-top: 40px;
-        letter-spacing: .7px;
       }
 
       color: $textColor;
