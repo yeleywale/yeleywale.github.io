@@ -1,15 +1,18 @@
 @import "variables";
 
+.highlight {
+  margin: auto;
+  width: 98%;
+}
+
+
+
 pre.highlight {
   background-color: #343a40;
   padding: 14px 7px 14px 20px;
-  // -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  // -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  // box-shadow: 3px 3px rgba(0,0,0,0.1);~
   margin: 20px 0 20px 0;
   overflow: auto;
   width: inherit;
-  text-shadow: .3px .1px gainsboro;
 
 
   &::-webkit-scrollbar {

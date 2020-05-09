@@ -1,18 +1,13 @@
 //
 // VARIABLES
 //
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro');
+
 @font-face {
     font-family: 'Hoefler';
     src: url('./Hoefler-regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Crimson';
-    src: url('https://fonts.googleapis.com/css?family=Crimson+Pro');
-}
-@font-face {
-    font-family: 'crimson-text';
-    src: url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 }
 
 // Colors
@@ -29,19 +24,13 @@ $white: #fff;
 $mainbg: #1d1f21;
 $foreground: #D8D8D8;
 $textColor: #c9cacc;
+$Crimson: "Crimson Text", "Helvetica Neue", "San Serif";
 // Font stacks
-$Hoefler: crimson-text,
+$Garamond: "Eb Garamond",
 "Helvetica Neue",
-sans-serif;
-$helvetica: Helvetica,
-Arial,
-sans-serif;
-$helveticaNeue: "Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif;
-$georgia: Georgia,
-serif;
+"Sans Serif";
+
+
 
 // Mobile breakpoints
 @mixin mobile {

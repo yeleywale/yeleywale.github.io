@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="container short-bio">
-  Hi! I am <strong>Akinwale Alexander &#x1F913;</strong>. A software engineer, an expert using languages such as <strong><a target="_blank" href="https://www.scala-lang.org/">Scala</a></strong>, <strong><a target="_blank" href="https://kafka.apache.org">Kafka</a></strong>, <strong><a target="_blank" href="https://akka.io">Akka-stream</a></strong>, <strong><a target="_blank" href="https://zio.dev">ZIO</a></strong>, etc, for the greater good of humanity. I'm a contributor on various open source projects. A technology advocate for Scala in Africa, and I stand to push the envelope of software development as far as I can through dilligence, collaboration and helping others. <strong>All views expressed here are mine and doesn't in any way represent my the stance of my company.</strong>
+  Hi! I am <strong>Akinwale Alexander &#x1F913;</strong>. A software craft person using <strong><a target="_blank" href="https://www.scala-lang.org/">Scala</a></strong> for fun and for profit. 
 </div>
 
 <div class="container">
@@ -19,13 +19,13 @@ layout: default
 </div>
 
 <div class="posts container">
-  <h3>Recent Posts: </h3>
+  <!-- <h3>Recent Posts: </h3> -->
   <ul>
     {% for post in site.posts %}
     <a href="{{ site.baseurl }}{{ post.url }}" class="post-list">
         <li class="row">
-          <span class="datelist col-lg-2">{{ post.date | date: "%B %e, %Y" }}</span>
-          <span class="col-lg-8 blog-title">{{ post.title }}</span>
+          <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
+          <span class="col-lg-7 blog-title">{{ post.title }}</span>
             
         </li>
     </a>
