@@ -418,13 +418,17 @@ html {
   .short-bio {
     color: $textColor;
     background-color: #343a40;
-    background-image: linear-gradient(to right, darken($highlight, 40%), #343a40);
+    background-image: linear-gradient(90deg, #54b30e -1%, #0788ff);
     padding: 20px;
     // box-shadow: 2px 2px 2px #343a40;
     width: 75%;
   }
 
   .post {
+    h1 {
+      text-transform: uppercase;
+      font-family: $Garamond;
+    }
     font-family: $Crimson;
     font-size: 16px;
 
@@ -499,12 +503,24 @@ html {
       margin-bottom: 100px;
       margin-top: 120px;
       text-align: center;
-      font-size: 40px;
-      font-family: $Crimson;
+      font-size: 30px;
+      letter-spacing: 1.2px;
+      font-family: $Garamond;
     }
 
     .entry {
       font-size: 26px;
+
+      ol,ul {
+         margin-left: 60px;
+      }
+
+      blockquote {
+        border-left: 1px solid $highlight;
+        p {
+          color: $highlight;
+        }
+      }
       
       h2 {
         color: $highlight;
