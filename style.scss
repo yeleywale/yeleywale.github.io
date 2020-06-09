@@ -328,9 +328,9 @@ html {
       float: right;
       padding: 3px 15px 5px 15px;
       line-height: 10px;
-      color: #0788ff;
+      color: #d3be41;
       font-family: $Crimson;
-      border-left: 1px dotted white;
+      border-left: 2px groove #007bff;
 
       &:hover {
         color: $textColor;
@@ -369,7 +369,7 @@ html {
         text-decoration: none;
 
         li {
-          font-size: 24px;
+          font-size: 28px;
           font-family: $Crimson;
           padding: 0.4em 0px 0.4em 0px;
           margin-left: auto;
@@ -399,7 +399,7 @@ html {
           text-align: right;
           color: #0788ff;
           text-align: left;
-          font-size: 20px;
+          font-size: 22px;
           padding-top: 4px;
 
           &:hover {
@@ -480,12 +480,12 @@ html {
 
     a {
       font-weight: 900;
-      font-size: 30px;
+      font-size: 40px;
       text-indent: 10px;
       color: $textColor;
 
       &:hover {
-        color: $highlight;
+        color: $textColor;
       }
     }
   }
@@ -496,6 +496,11 @@ html {
     color: $highlight;
     text-align: left;
     padding-top:20px;
+    span {
+      span {
+        color: white;
+      }
+    }
   }
 
   .post {
