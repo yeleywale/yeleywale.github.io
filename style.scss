@@ -247,7 +247,7 @@ html {
 
     a {
       padding: 6px;
-      color: $highlight;
+      color: #0788ff;
       font-size: 18px;
       font-weight: 300;
 
@@ -283,7 +283,7 @@ html {
     letter-spacing: 1px;
 
     a {
-      color: $textColor;
+      color: #0788ff;
 
       &:hover {
         color: $highlight;
@@ -327,10 +327,10 @@ html {
       font-size: 20px;
       float: right;
       padding: 3px 15px 5px 15px;
-      line-height: 6px;
-      color: $highlight;
+      line-height: 10px;
+      color: #0788ff;
       font-family: $Crimson;
-      border-left: 1px dotted $highlight;
+      border-left: 1px dotted white;
 
       &:hover {
         color: $textColor;
@@ -397,7 +397,7 @@ html {
 
         span.datelist {
           text-align: right;
-          color: $highlight;
+          color: #0788ff;
           text-align: left;
           font-size: 20px;
           padding-top: 4px;
@@ -492,9 +492,10 @@ html {
 
   .footer-about {
     font-family: $Crimson;
-    font-size: 18px;
+    font-size: 20px;
     color: $highlight;
     text-align: left;
+    padding-top:20px;
   }
 
   .post {
