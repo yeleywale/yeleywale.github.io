@@ -12,10 +12,10 @@
 /**************/
 
 html {
-  font-size: 20px;
+  font-size: 62.5%;
   body {
     background: $mainbg !important;
-    font: 20px/1.4 $Crimson;
+    font: 1.4/1.4 $Quicksand;
     color: $textColor;
   }
 
@@ -29,7 +29,7 @@ html {
   h4,
   h5,
   h6 {
-    font-family: $Garamond;
+    font-family: $Quicksand;
     color: $highlight;
     padding: 0;
     // @include mobile {
@@ -38,7 +38,7 @@ html {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 
     a {
       color: inherit;
@@ -46,20 +46,22 @@ html {
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 2.2rem;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 2.0rem;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: $gray;
   }
 
   p {
+    font-size: 1.6rem;
     margin: 15px 0;
+    font-family: $Quicksand;
   }
 
   a {
@@ -92,6 +94,10 @@ html {
   ul ul,
   ol ul {
     list-style-type: circle;
+  }
+
+  li {
+    font-size: 1.4rem;
   }
 
   em,
@@ -173,7 +179,8 @@ html {
   }
 
   .topics {
-    font-size: 20px;
+    font-size: 1.8rem;
+    font-family: $QuicksandBold;
     color: $textColor;
     text-decoration: none;
   }
@@ -247,9 +254,9 @@ html {
 
     a {
       padding: 6px;
-      color: #0788ff;
-      font-size: 18px;
-      font-weight: 300;
+      color: #06b6ef;
+      font-size: 1.4rem;
+      font-family: $QuicksandMedium;
 
       &:after {
         content: ".";
@@ -275,15 +282,14 @@ html {
   .site-name {
     margin: 0;
     cursor: pointer;
-    font-family: $Crimson;
-    font-weight: 500;
-    font-size: 40px;
+    font-family: $QuicksandBold;
+    font-size: 30px;
     padding: 10px 10px 10px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
 
     a {
-      color: #0788ff;
+      color: #06b6ef;
 
       &:hover {
         color: $highlight;
@@ -304,7 +310,7 @@ html {
 
   nav {
     // margin-top: 23px; // @TODO: Vertically middle align
-    font-family: $Garamond;
+    font-family: $Quicksand;
     font-size: 14px;
 
     @include mobile {
@@ -321,16 +327,16 @@ html {
   }
 
   .navb {
-    margin-top: 35px;
+    margin-top: 20px;
 
     a {
-      font-size: 20px;
+      font-size: 1.6rem;
       float: right;
       padding: 3px 15px 5px 15px;
       line-height: 10px;
       color: #d3be41;
-      font-family: $Crimson;
-      border-left: 2px groove #007bff;
+      font-family: $QuicksandMedium;
+      border-left: .1rem groove #06b6ef;
 
       &:hover {
         color: $textColor;
@@ -364,44 +370,50 @@ html {
 
     padding: 15px 0 15px 0;
 
+
     ul {
+          
       a {
         text-decoration: none;
+        display: block;
+        width: 80%;
+        margin: auto;
+         &:hover {
+           transition-property: text-align,
+             background-color;
+           transition-duration: 0.5s;
+           transition-delay: 0.3s;
+           color: #fff;
+           text-decoration: none;
+
+           background-color: #06b6ef;
+           li {
+             span.datelist {
+               color: white;
+             }
+
+           }
+         }
+        
 
         li {
-          font-size: 28px;
-          font-family: $Crimson;
-          padding: 0.4em 0px 0.4em 0px;
-          margin-left: auto;
-          margin-right: auto;
+          // border-top: 1px solid #06b6ef;
+          font-size: 2.0rem;
+          font-family: $QuicksandMedium;  
           color: white;
           list-style-type: none;
-          text-align: justify;
-          transition-property: text-indent, background-color;
-          transition-duration: 0.5s;
-          transition-delay: 0.1s;
-          // font-weight: bold;
-          margin-top: 2px;
+          border-top: .1rem groove #06b6ef;
+          padding: 0.5em 0 0.5em 0;
           .blog-title {
-            &:hover {
-              transition-property: text-indent,
-              background-color;
-              transition-duration: 0.5s;
-              transition-delay: 0.3s;
-              color: #fff;
-              text-decoration: none;
-              text-indent: 20px;
-            }
+            text-align: left;           
           }
         }
 
         span.datelist {
+          color: #06b6ef;
           text-align: right;
-          color: #0788ff;
-          text-align: left;
-          font-size: 22px;
-          padding-top: 4px;
-
+          font-size: 1.8rem;
+          font-family: $QuicksandMedium;
           &:hover {
             color: #fff;
           }
@@ -416,20 +428,21 @@ html {
   }
 
   .short-bio {
+    font-size: 1.8rem;
     color: white;
     background-color: #343a40;
-    background-image: linear-gradient(90deg, #54b30e -1%, #0788ff);
+    background-image: linear-gradient(90deg, #54b30e -1%, #06b6ef);
     padding: 20px;
     // box-shadow: 2px 2px 2px #343a40;
-    width: 75%;
+    margin: auto;
   }
 
   .post {
     h1 {
       text-transform: uppercase;
-      font-family: $Garamond;
+      font-family: $Quicksand;
     }
-    font-family: $Crimson;
+    font-family: $Quicksand;
     font-size: 16px;
 
 
@@ -451,36 +464,20 @@ html {
     }
   }
 
-  .outer-footer {
-    padding: 0 !important;
-    margin-bottom: 30px;
-    margin-top: 60px;
-  }
 
-  footer {
-    text-align: center;
+  .footer {
     // margin-bottom: 50px;
     margin-bottom: 20px;
     margin-top: 50px;
-
-    div {
-      margin-top: 10px;
-      text-align: center;
-    }
   }
 
   .footer-links {
     text-align: right;
     margin-right: 20px;
 
-    .footer-links-text {
-      font-size: 30px;
-      color: $highlight;
-    }
-
     a {
       font-weight: 900;
-      font-size: 40px;
+      font-size: 25px;
       text-indent: 10px;
       color: $textColor;
 
@@ -491,14 +488,14 @@ html {
   }
 
   .footer-about {
-    font-family: $Crimson;
-    font-size: 20px;
+    font-family: $QuicksandMedium;
+    font-size: 1.8rem;
     color: $highlight;
     text-align: left;
-    padding-top:20px;
     span {
       span {
         color: white;
+        font-family: $QuicksandBold;
       }
     }
   }
@@ -509,13 +506,18 @@ html {
       margin-bottom: 100px;
       margin-top: 120px;
       text-align: center;
-      font-size: 30px;
+      font-size: 2.8rem;
       letter-spacing: 1.2px;
-      font-family: $Garamond;
+      font-family: $QuicksandMedium;
+    }
+
+    p {
+      font-size: 2.4rem;
     }
 
     .entry {
-      font-size: 26px;
+      font-size: 2.6rem;
+      font-family: $QuicksandMedium;
 
       ol,ul {
          margin-left: 60px;
@@ -531,7 +533,7 @@ html {
       h2 {
         color: $highlight;
         margin-top: 40px;
-        font-family: $Crimson;
+        font-family: $Quicksand;
         font-size: 30px;
         margin-bottom: 40px;
       }

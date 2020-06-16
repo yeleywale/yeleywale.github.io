@@ -14,8 +14,22 @@
     src: url('./Whitney-Medium.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'quicksand';
+    src: url('../fonts/Quicksand/static/Quicksand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'quicksand bold';
+    src: url('../fonts/Quicksand/static/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'quicksand medium';
+    src: url('../fonts/Quicksand/static/Quicksand-Medium.ttf') format('truetype');
+}
+
 // Colors
-$blue: #4183C4;
+$blue: #06b6ef;
 // Grays
 // $black: #000;
 $black: #FFFFFF;
@@ -28,14 +42,16 @@ $white: #fff;
 $mainbg: #1d1f21;
 $foreground: #D8D8D8;
 $textColor: #fff;
-$Crimson: "Crimson Text", "Helvetica Neue", "San Serif";
+$Quicksand: quicksand,
+"Helvetica Neue",
+"San Serif";
 // Font stacks
-$Garamond: "Eb Garamond",
+$Quicksand: quicksand,
 "Helvetica Neue",
 "Sans Serif";
 
-
-
+$QuicksandBold: "quicksand bold", Helvetica, "Sans Serif";
+$QuicksandMedium: "quicksand medium", Helvetica, "Sans Serif";
 // Mobile breakpoints
 @mixin mobile {
     @media screen and (max-width: 640px) {

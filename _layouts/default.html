@@ -25,45 +25,40 @@
     </style>
 </head>
 
-<body>
-    <div class="container-base">
-        <div class="wrapper-masthead container-fluid">
-            <header class="masthead container">
-                <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
+<body class="container">
 
-                <div class="row">
-                    <div class="site-info col-10 col-md-6 col-lg-6 col-sm-6 col-sm-10">
-                        <h1 class="site-name"><a href="{{ site.baseurl }} /">
-                                {{ site.name }}
-                            </a> </h1>
-                        <!-- <p class="site-description">{{ site.description }}</p> -->
-                    </div>
+    <header class="masthead container">
+        <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
 
-                    <nav class="col-10 col-md-6 col-lg-6 col-sm-9 navb">
-                        <a href="{{ site.baseurl }}/misc">Miscellaneous</a>
-                        <a href="{{ site.baseurl }}/about">About</a>
-                        <a href="{{ site.baseurl }}/podcast">Podcast</a>
-                        <a href="{{ site.baseurl }}/portfolio">Projects</a>
-                    </nav>
-            </header>
-        </div>
-        <div id="main" role="main" class="container-fluid">
-            {{ content }}
-        </div>
+        <div class="row">
+            <div class="site-info col-10 col-md-6 col-lg-6 col-sm-6 col-sm-10">
+                <h1 class="site-name"><a href="{{ site.baseurl }} /">
+                        {{ site.name }}
+                    </a> </h1>
+                <!-- <p class="site-description">{{ site.description }}</p> -->
+            </div>
 
-        <div class="container">
-            <footer class="footer">
-                <div class="row">
-                    <div class="col-10 col-lg-5 col-md-6 col-sm-6 footer-about">
-                        <span class="">
-                            <span>&copy;</span> 2020 &nbsp; Akinwale Alexander
-                        </span>
-                    </div>
-                    {% include svg-icons.html %}
-                </div>
-            </footer>
-        </div>
+            <nav class="col-10 col-md-6 col-lg-6 col-sm-9 navb">
+                <a href="{{ site.baseurl }}/misc">Miscellaneous</a>
+                <a href="{{ site.baseurl }}/about">About</a>
+                <a href="{{ site.baseurl }}/podcast">Podcast</a>
+                <a href="{{ site.baseurl }}/portfolio">Projects</a>
+            </nav>
+    </header>
+    <div id="main" role="main" class="container">
+        {{ content }}
     </div>
+
+    <footer class="footer container">
+        <div class="row">
+            <div class="col-10 col-lg-5 col-md-6 col-sm-6 footer-about">
+                <span class="">
+                    <span>&copy;</span> 2020 &nbsp; Akinwale Alexander
+                </span>
+            </div>
+            {% include svg-icons.html %}
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -75,7 +70,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-        <script src="{{ site.baseurl }}/script.js"></script>
+    <script src="{{ site.baseurl }}/script.js"></script>
 </body>
 
 
