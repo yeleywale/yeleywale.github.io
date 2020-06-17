@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="container short-bio">
-  Hi! I am <strong>Akinwale Alexander &#x1F913;</strong>. A software craft person using <strong><a target="_blank" href="https://www.scala-lang.org/">Scala</a></strong> for fun and for profit. 
+  Hi! I am <strong>Akinwale Alexander &#x1F913;</strong>. A software craft person using <strong><a target="_blank"
+      href="https://www.scala-lang.org/">Scala</a></strong> for fun and for profit.
 </div>
 
 <div class="container">
@@ -13,25 +14,30 @@ layout: default
       {% for tag in site.data.tags %}
       <a href="/tags/{{ tag.name }}"> {{ tag.name | capitalize}} </a>
       {% endfor %}
-    
+
     </div>
   </div>
 </div>
 
-  <div class="posts container">
-    <!-- <h3>Recent Posts: </h3> -->
-    <ul>
-      {% for post in site.posts %}
-      <a href="{{ site.baseurl }}{{ post.url }}" class="container">
-        
-        <li class="row">      
-          
-            <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
-            <span class="col-lg-7 blog-title">{{ post.title }}</span>
-    
-        </li>
-      </a>
-      {% endfor %}
-    </ul>
-  
-  </div>
+<div class="posts container">
+  <!-- <h3>Recent Posts: </h3> -->
+  <ul>
+    {% for post in site.posts %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="container">
+
+      <li class="row">
+        {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+        {% if posttime > nowunix %}
+          <span>ready</span>
+          <span>{{post.title}}</span>
+        {% endif  %}
+        <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
+        <span class="col-lg-7 blog-title">{{ post.title }}</span>
+
+      </li>
+    </a>
+    {% endfor %}
+  </ul>
+
+</div>
