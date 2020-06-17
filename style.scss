@@ -380,6 +380,15 @@ html {
         display: block;
         width: 80%;
         margin: auto;
+        border: .1rem groove #06b6ef;
+        border-bottom: none;
+        &:nth-child(odd) {
+          border-top: .1rem groove #06b6ef;
+        }
+
+        &:last-child {
+          border-bottom: .1rem groove #06b6ef;
+        }
          &:hover {
            transition-property: text-align,
              background-color;
@@ -404,19 +413,14 @@ html {
           font-family: $QuicksandMedium;  
           color: white;
           list-style-type: none;
-          border: .1rem groove #06b6ef;
+          // border: .1rem groove #06b6ef;
           padding: 0.5em 0 0.5em 0;
+          // border-bottom: none;
          
-          &:nth-child(n-1) {
-            border-bottom: none;
-          } 
-           &:last-child {
-             border-bottom: .1rem groove #06b6ef;
-           }
-
-
-
-                   
+          // &:nth-child(odd) {
+          //   border-top: .1rem groove #06b6ef;
+          // }
+          
           .blog-title {
             text-align: left;           
           }
