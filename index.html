@@ -22,20 +22,26 @@ layout: default
     <!-- <h3>Recent Posts: </h3> -->
     <ul>
       {% for post in site.posts %}
+      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+      {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+      {% if posttime > nowunix %}
+      <a href="" class="container">
+      
+        <li class="row">
+      
+          <span>ready</span>
+          <span>{{post.title}}</span>
+          </li>
+      </a>
+          {% else%}
       <a href="{{ site.baseurl }}{{ post.url }}" class="container">
         
-        <li class="row">
-              {% if post.date >= Date.now %}
-              <span>ready</span>
-              <span>{{post.title}}</span>
-              
-              {% else%}          
+        <li class="row">     
             <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
             <span class="col-lg-7 blog-title">{{ post.title }}</span>
-            {% endif  %}
-    
         </li>
       </a>
+      {% endif  %}
       {% endfor %}
     </ul>
   
