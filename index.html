@@ -29,8 +29,8 @@ layout: default
       
         <li class="row">
       
-          <span>ready</span>
-          <span>{{post.title}}</span>
+          <span class="datelist col-lg-3"">Posting in <em>{{ posttime - nowunix }}</em> </span>
+          <span class="col-lg-7 blog-title">{{post.title}}</span>
           </li>
       </a>
           {% else%}
