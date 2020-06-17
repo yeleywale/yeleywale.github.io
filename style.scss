@@ -256,14 +256,14 @@ html {
       padding: 6px;
       color: #06b6ef;
       font-size: 1.4rem;
-      font-family: $QuicksandMedium;
+      font-family: $QuicksandBold;
 
       &:after {
         content: ".";
         font-weight: 800;
         color: $textColor;
-        margin-left: 3px;
-        font-size: 22px;
+        margin-left: 1px;
+        font-size: 2.0rem;
       }
 
       &:last-child {
@@ -335,13 +335,13 @@ html {
       padding: 10px 15px 10px 15px;
       line-height: 10px;
       color: #d3be41;
-      font-family: $QuicksandMedium;
-      border: .1rem groove #06b6ef;
+      font-family: $QuicksandBold;
+      border: .02em dotted #06b6ef;
       &:nth-child(n-1){
         border-left:none;
       }
       &:last-child {
-        border-left:.1rem groove #06b6ef;
+        border-left: .02em dotted #06b6ef;
       }
       &:hover {
         color: $textColor;
@@ -380,14 +380,13 @@ html {
         display: block;
         width: 80%;
         margin: auto;
-        border: .1rem groove #06b6ef;
-        border-bottom: none;
+        border-top: .02em dotted #06b6ef;
         &:nth-child(odd) {
-          border-top: .1rem groove #06b6ef;
+          border-top: .02em dotted #06b6ef;
         }
 
         &:last-child {
-          border-bottom: .1rem groove #06b6ef;
+          border-bottom: .02em dotted #06b6ef;
         }
          &:hover {
            transition-property: text-align,
@@ -409,12 +408,11 @@ html {
 
         li {
           // border-top: 1px solid #06b6ef;
-          font-size: 2.0rem;
+          font-size: 1.6rem;
           font-family: $QuicksandMedium;  
           color: white;
           list-style-type: none;
           // border: .1rem groove #06b6ef;
-          padding: 0.5em 0 0.5em 0;
           // border-bottom: none;
          
           // &:nth-child(odd) {
@@ -422,15 +420,19 @@ html {
           // }
           
           .blog-title {
-            text-align: left;           
+            text-align: left;
+            padding: 0.5em 0 0.5em 1em;
           }
         }
 
         span.datelist {
           color: #06b6ef;
           text-align: right;
-          font-size: 1.8rem;
+          font-size: 1.4rem;
           font-family: $QuicksandMedium;
+          // border-right: .02em dotted #06b6ef;
+          line-height: 2;
+          padding: 0.5em 1em 0.5em 0;
           &:hover {
             color: #fff;
           }
@@ -445,11 +447,11 @@ html {
   }
 
   .short-bio {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     background-color: #343a40;
     background-image: linear-gradient(90deg, #54b30e -1%, #06b6ef);
-    padding: 20px;
+    padding: 15px;
     // box-shadow: 2px 2px 2px #343a40;
     margin: auto;
   }
@@ -505,7 +507,7 @@ html {
   }
 
   .footer-about {
-    font-family: $QuicksandMedium;
+    font-family: $QuicksandBold;
     font-size: 1.8rem;
     color: $highlight;
     text-align: left;
