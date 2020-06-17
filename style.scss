@@ -327,24 +327,26 @@ html {
   }
 
   .navb {
-    margin-top: 20px;
+     margin-top: 10px;
 
     a {
       font-size: 1.6rem;
       float: right;
-      padding: 3px 15px 5px 15px;
+      padding: 10px 15px 10px 15px;
       line-height: 10px;
       color: #d3be41;
       font-family: $QuicksandMedium;
-      border-left: .1rem groove #06b6ef;
-
+      border: .1rem groove #06b6ef;
+      &:nth-child(n-1){
+        border-left:none;
+      }
+      &:last-child {
+        border-left:.1rem groove #06b6ef;
+      }
       &:hover {
         color: $textColor;
         text-decoration: none;
-      }
-
-      &:last-child {
-        border-left: none;
+        background: #06b6ef;
       }
     }
   }
@@ -402,8 +404,19 @@ html {
           font-family: $QuicksandMedium;  
           color: white;
           list-style-type: none;
-          border-top: .1rem groove #06b6ef;
+          border: .1rem groove #06b6ef;
           padding: 0.5em 0 0.5em 0;
+         
+          &:nth-child(n-1) {
+            border-bottom: none;
+          } 
+           &:last-child {
+             border-bottom: .1rem groove #06b6ef;
+           }
+
+
+
+                   
           .blog-title {
             text-align: left;           
           }
