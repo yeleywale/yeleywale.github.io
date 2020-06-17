@@ -78,6 +78,6 @@ exclude:
 
 encoding: utf-8
 
-# show_drafts: true
+show_drafts: true
 
 
