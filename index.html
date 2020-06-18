@@ -22,14 +22,14 @@ layout: default
     <!-- <h3>Recent Posts: </h3> -->
     <ul>
       {% for post in site.posts %}
-      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-      {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+      {% capture nowunix %}{{'now' | date: '%m'}}{% endcapture %}
+      {% capture posttime %}{{post.date | date: '%m'}}{% endcapture %}
       {% if posttime > nowunix %}
       <a href="" class="container">
       
         <li class="row">
       
-          <span class="datelist datelist-pending col-lg-3"">Posting in <em>{{ (posttime - nowunix)/60 }} min(s)</em> </span>
+          <span class="datelist datelist-pending col-lg-3"">Posting in <em>{{ (posttime - nowunix) }} min(s)</em> </span>
           <span class="col-lg-7 blog-title blog-title-pending">{{post.title}}</span>
           </li>
       </a>
