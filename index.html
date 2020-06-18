@@ -29,7 +29,9 @@ layout: default
       
         <li class="row">
       
-          <span class="datelist datelist-pending col-lg-3">Posting in <em>{{ posttime | minus: nowunix | modulo: 3600  | times: 60 }} mins</em> </span>
+          <span class="datelist datelist-pending col-lg-3">Posting in <em>
+            {{ posttime | minus: nowunix | divided_by: 3600 }} mins
+          </em> </span>
           <span class="col-lg-7 blog-title blog-title-pending">{{post.title}}</span>
           <span>{{ posttime }}</span>
           </li>
