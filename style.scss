@@ -204,6 +204,7 @@ html {
 
   a.pending {
     background-color:#4e5359;
+    cursor: progress;
     &:hover {
       background: #343a40;
     }
@@ -545,7 +546,7 @@ html {
     }
 
     p {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
     }
 
     .entry {
