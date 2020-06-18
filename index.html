@@ -33,7 +33,7 @@ layout: default
             {{ (posttime | minus: nowunix) | divided_by: 3600 }} mins
           </em> </span>
           <span class="col-lg-7 blog-title blog-title-pending">{{post.title}}</span>
-          <span>{{ posttime }}</span>
+          <span>{{ posttime | minus: nowunix }}</span>
           </li>
       </a>
           {% else%}
