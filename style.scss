@@ -202,8 +202,11 @@ html {
     }
   }
 
-  .pending {
+  a.pending {
     background-color:#4e5359;
+    &:hover {
+      background: #343a40;
+    }
   }
 
   .datelist-pending {
