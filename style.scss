@@ -204,7 +204,7 @@ html {
 
   a.pending {
     background-color:#4e5359;
-    cursor: progress;
+    cursor: progress !important;
     &:hover {
       background: #2e3338 !important;
     }
