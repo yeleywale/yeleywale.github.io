@@ -25,7 +25,7 @@ layout: default
       {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
       {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
       {% if posttime > nowunix %}
-      <a href="" class="container">
+      <a href="" class="container pending">
       
         <li class="row">
       

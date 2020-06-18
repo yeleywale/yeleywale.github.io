@@ -202,6 +202,17 @@ html {
     }
   }
 
+  .pending {
+    background-color:#4e5359;
+  }
+
+  .datelist-pending {
+    color: #d3be41;
+  }
+  .blog-title-pending {
+    color: #c3d0df;
+  }
+
   .site-info {
     nav {
       color: $textColor;
