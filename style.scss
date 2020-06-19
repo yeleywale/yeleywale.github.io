@@ -342,18 +342,20 @@ html {
   }
 
   .navb {
-     margin-top: 10px;
+     display: flex;
+     line-height: 1;
+     align-items: flex-start;
+     
 
     a {
       font-size: 1.6rem;
-      padding: 10px 15px 10px 15px;
-      line-height: 10px;
+      padding: 12px 15px;
       color: #d3be41;
       font-family: $QuicksandBold;
-      border: .02em ridge #06b6ef;
+      border: .02em dotted #06b6ef;
       border-right: none;
       &:last-child {
-        border-right: .02em ridge #06b6ef;
+        border-right: .02em dotted #06b6ef;
       }
       &:hover {
         color: $textColor;
@@ -386,6 +388,9 @@ html {
 
 
     ul {
+      display: flex;
+      flex-direction: column;
+      
           
       a {
         text-decoration: none;
@@ -434,6 +439,7 @@ html {
           .blog-title {
             text-align: left;
             padding: 0.5em 0 0.5em 1em;
+            flex-grow: 4;
           }
         }
 
@@ -445,6 +451,7 @@ html {
           // border-right: .02em dotted #06b6ef;
           line-height: 2;
           padding: 0.5em 1em 0.5em 0;
+          flex-grow:1;
           &:hover {
             color: #fff;
           }
@@ -640,13 +647,18 @@ html {
 
   // Medium devices (tablets, 768px and up)
   @media (max-width: 1200px) {
-    font-size: 16px;
+    
     h2 {
       font-size: 1.5rem;
     }
 
     h3 {
       font-size: 1.2rem;
+    }
+
+    .short-bio {
+      font-size: 1.2rem;
+      padding: 8px;
     }
     .site-info {
       .site-name {
@@ -665,12 +677,10 @@ html {
       justify-content: center;
       align-content: center;
       .navb {
-        flex-grow: 1;
-        margin-top: 15px;
-
+        display: block;
         a {
           font-size: 1.0rem;
-          padding: 2px 3px 2px 3px;
+          padding: 3px 4px 3px 4px;
         }
       }
     }
@@ -755,6 +765,8 @@ html {
 
      div.tags {
            margin: 50px auto 20px auto;
+           display: flex;
+           align-items: center;
        .topics {
          font-size:1.2rem;
        }
