@@ -352,10 +352,10 @@ html {
       padding: 12px 15px;
       color: #d3be41;
       font-family: $QuicksandBold;
-      border: .02em dotted #06b6ef;
+      border: .02em ride #06b6ef;
       border-right: none;
       &:last-child {
-        border-right: .02em dotted #06b6ef;
+        border-right: .02em ridge #06b6ef;
       }
       &:hover {
         color: $textColor;
