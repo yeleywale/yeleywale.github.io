@@ -21,7 +21,7 @@ layout: default
     </div>
     
     <div class="col">
-      <span class="tags">
+      <span class="bottom-tags">
         {% for tag in page.tags %}
         {% capture tag_name %}{{ tag }}{% endcapture %}
         <a href="/tag/{{ tag_name }}">{{ tag_name }}</nobr>&nbsp;</a>

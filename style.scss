@@ -392,13 +392,13 @@ html {
         display: block;
         width: 80%;
         margin: auto;
-        border-top: .02em dotted #06b6ef;
+        border-top: .02em ridge #06b6ef;
         &:nth-child(odd) {
-          border-top: .02em dotted #06b6ef;
+          border-top: .02em ridge #06b6ef;
         }
 
         &:last-child {
-          border-bottom: .02em dotted #06b6ef;
+          border-bottom: .02em ridge #06b6ef;
         }
          &:hover {
            transition-property: text-align,
@@ -587,6 +587,10 @@ html {
       font-size: 30px;
     }
 
+    .bottom-tags {
+      font-size: 1.4rem;
+    }
+
     h3 {
       font-size: 30px;
     }
@@ -655,17 +659,45 @@ html {
 
     }
 
-    .navb {
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      .navb {
+        flex-grow: 1;
+        margin-top: 15px;
 
-      a {
-        font-size: 1rem;
-        padding: 2px 7px 2px 7px;
+        a {
+          font-size: 1.0rem;
+          padding: 2px 3px 2px 3px;
+        }
       }
     }
 
-    .post {
+    .posts {
+
+      ul {
+        a {
+          li.row {
+             flex-direction: column-reverse;
+             span.datelist {
+               line-height: 1;
+             }
+          }
+        }
+      }
       h3 {
         font-weight: bolder;
+      }
+    }
+
+    .footer-row {
+      display: flex;
+      flex-direction: row;
+      .footer-about {
+        text-align: left;
+        font-size: 1.4rem;
       }
     }
   }
@@ -710,6 +742,9 @@ html {
            font-size: 16px
          }
        }
+     }
+     .bottom-tags {
+       font-size: 1.2rem;
      }
    }
 
@@ -846,6 +881,9 @@ html {
           }
         }
       }
+      .bottom-tags {
+        font-size: 1rem;
+      }
    }
 
    @media screen and (max-width: 400px) {
@@ -901,6 +939,41 @@ html {
          }
        }
      }
+     .post {
+       h1 {
+         font-size: 1.6rem;
+         text-align: left;
+         margin-top: 40px;
+         margin-bottom: 30px;
+       }
+       .entry {
+         font-size: 1rem;
+         blockquote {
+           font-size: 0.8rem;
+         }
+         pre.highlight {
+           font-size: 1rem;
+         }
+           p {
+             font-size: 1rem;
+           }
+
+           ul,ol {
+             li {
+               font-size: 1rem;
+             }
+           }
+       }
+       .date {
+         font-size: 0.8rem;
+       }
+
+       .bottom-tags {
+         font-size: 0.8rem;
+       }
+     }
+
+     
    }
 
 
