@@ -346,17 +346,14 @@ html {
 
     a {
       font-size: 1.6rem;
-      float: right;
       padding: 10px 15px 10px 15px;
       line-height: 10px;
       color: #d3be41;
       font-family: $QuicksandBold;
-      border: .02em dotted #06b6ef;
-      &:nth-child(n-1){
-        border-left:none;
-      }
+      border: .02em ridge #06b6ef;
+      border-right: none;
       &:last-child {
-        border-left: .02em dotted #06b6ef;
+        border-right: .02em ridge #06b6ef;
       }
       &:hover {
         color: $textColor;
@@ -659,8 +656,6 @@ html {
     }
 
     .navb {
-      text-align: left;
-      font-size: 14px;
 
       a {
         font-size: 1rem;
@@ -674,7 +669,7 @@ html {
       }
     }
   }
-   @media (min-width: 768) {
+   @media (max-width: 768) {
      font-size: 16px;
 
      div.row-header {
@@ -749,9 +744,10 @@ html {
             //  flex-direction: row-reverse;
              flex-wrap: wrap;
              font-size: 1.2rem;
+             flex-direction: column-reverse;
              span.datelist {
                font-size: 1.2rem;
-              text-align: left;
+               line-height: normal;
                padding: 0;
              }
 
@@ -759,6 +755,29 @@ html {
               //  text-align: left;
              }
            }
+         }
+       }
+       .post {
+         h1 {
+           margin-top: 70px;
+           font-size: 1.6rem;
+           text-align: left;
+           margin-bottom: 50px;
+         }
+
+         .entry {
+           pre.highlight {
+             font-size: .8rem;
+           }
+
+           h2 {
+
+             font-size: 1.4rem;
+           }
+         }
+
+         p {
+           font-size: 1.0rem;
          }
        }
      }
@@ -798,7 +817,7 @@ html {
             margin: 0 auto 0 auto;
             font-family: $QuicksandMedium;
             font-size: 1.0rem;
-            padding: 8px 6px;
+            padding: 4px 3px;
           }
         }
       }
@@ -810,6 +829,7 @@ html {
         .footer-about {
           font-size: 1.2rem;
           margin-top: 8px;
+          text-align: center;
         }
 
       }
@@ -828,30 +848,64 @@ html {
       }
    }
 
-
-
-     .post {
-       h1 {
-         margin-top: 70px;
-         font-size: 1.6rem;
-         text-align: left;
-         margin-bottom: 50px;
-       }
-
-       .entry {
-               pre.highlight {
-                 font-size: .8rem;
-               }
-         h2 {
-
-           font-size: 1.4rem;
+   @media screen and (max-width: 400px) {
+     div.header {
+       align-items: center;
+       justify-content: center;
+       .site-info {
+         .site-name {
+           font-size: 1.0rem;
          }
        }
-
-       p {
-         font-size: 1.0rem;
+       .navb {
+         text-align: center;
+         a {
+           padding: 4px 3px;
+           font-size: 0.8rem;
+           float: none;
+         }
        }
      }
+
+     div.short-bio {
+       font-size: 0.8rem;
+     }
+
+     div.tags {
+       .topics {
+         font-size: 1.0rem;
+       }
+       a {
+         font-size: 0.8rem;
+       }
+     }
+
+     .posts {
+       ul {
+         a {
+           
+           li.row {
+             font-size: 1.0rem;
+             span.datelist {
+               font-size: 1.0rem;
+             }
+           }
+         }
+       }
+     }
+
+     .footer-row {
+       .footer-about {
+         span {
+           font-size: 1.0rem;
+         }
+       }
+     }
+   }
+
+
+
+     
 
   // // Extra large devices (large desktops, 1200px and up)
   // @media (min-width: 1200px)
