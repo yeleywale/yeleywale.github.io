@@ -352,11 +352,15 @@ html {
       &:last-child {
         border-right: .02em ridge #46e4db;
       } 
+      &:active {
+        background-color: #46e4db;
+      }
       &:hover {
-        color: $textColor;
+        color: #1d1f21;
         text-decoration: none;
         background: #46e4db;
       }
+
     }
   }
 
