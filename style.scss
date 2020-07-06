@@ -185,7 +185,7 @@ html {
 
   .topics {
     font-size: 1.8rem;
-    font-family: $QuicksandBold;
+    font-family: $QuicksandMedium;
     color: #ffffff;
     text-decoration: none;
   }
@@ -276,7 +276,7 @@ html {
       padding: 6px;
       color: #46e4db;
       font-size: 1.4rem;
-      font-family: $QuicksandBold;
+      font-family: $QuicksandMedium;
 
       &:after {
         content: ".";
@@ -357,11 +357,11 @@ html {
       font-size: 1.6rem;
       padding: 6px 8px;
       color: #46e4db;
-      font-family: $QuicksandBold;
-      border: .02em ridge #46e4db;
+      font-family: $QuicksandMedium;
+      border: .02em groove #46e4db;
       border-right: none;
       &:last-child {
-        border-right: .02em ridge #46e4db;
+        border-right: .02em groove #46e4db;
       } 
       &:active {
         background-color: #46e4db;
@@ -407,13 +407,13 @@ html {
         display: block;
         width: 80%;
         margin: auto;
-        border-top: .02em ridge #46e4db;
+        border-top: .02em groove #46e4db;
         &:nth-child(odd) {
-          border-top: .02em ridge #46e4db;
+          border-top: .02em groove #46e4db;
         }
 
         &:last-child {
-          border-bottom: .02em ridge #46e4db;
+          border-bottom: .02em groove #46e4db;
         }
          &:hover {
            transition-property: text-align,
