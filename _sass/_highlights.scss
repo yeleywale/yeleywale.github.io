@@ -36,7 +36,7 @@ pre.highlight {
 
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
-    background: darken($highlight, 20%);
+    background: darken(#09efe1, 20%);
   }
 }
 
