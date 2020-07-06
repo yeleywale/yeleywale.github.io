@@ -277,6 +277,7 @@ html {
       color: #46e4db;
       font-size: 1.4rem;
       font-family: $QuicksandMedium;
+      letter-spacing: .5px;
 
       &:after {
         content: ".";
@@ -306,7 +307,7 @@ html {
     font-size: 30px;
     padding: 10px 10px 10px 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 
     a {
       color: #46e4db;
@@ -355,6 +356,7 @@ html {
 
     a {
       font-size: 1.6rem;
+      letter-spacing: .5px;
       padding: 6px 8px;
       color: #46e4db;
       font-family: $QuicksandMedium;
