@@ -261,7 +261,7 @@ html {
     margin: 80px auto 50px auto;
     div {
       span {
-        color: $textColor;
+        color: #46e4db;
         padding: 5px 15px 5px 15px;
         font-style: italic;
       }
@@ -304,10 +304,10 @@ html {
     letter-spacing: 1px;
 
     a {
-      color: #06b6ef;
+      color: #46e4db;
 
       &:hover {
-        color: $highlight;
+        color: #46e4db;
         text-decoration: none;
       }
     }
@@ -350,17 +350,17 @@ html {
     a {
       font-size: 1.6rem;
       padding: 12px 15px;
-      color: #d3be41;
+      color: #46e4db;
       font-family: $QuicksandBold;
       border: .02em ridge #06b6ef;
       border-right: none;
       &:last-child {
-        border-right: .02em ridge #06b6ef;
-      }
+        border-right: .02em ridge #46e4db;
+      } 
       &:hover {
         color: $textColor;
         text-decoration: none;
-        background: #06b6ef;
+        background: #46e4db;
       }
     }
   }
@@ -397,26 +397,26 @@ html {
         display: block;
         width: 80%;
         margin: auto;
-        border-top: .02em ridge #06b6ef;
+        border-top: .02em ridge #46e4db;
         &:nth-child(odd) {
-          border-top: .02em ridge #06b6ef;
+          border-top: .02em ridge #46e4db;
         }
 
         &:last-child {
-          border-bottom: .02em ridge #06b6ef;
+          border-bottom: .02em ridge #46e4db;
         }
          &:hover {
            transition-property: text-align,
              background-color;
            transition-duration: 0.5s;
            transition-delay: 0.3s;
-           color: #fff;
+           color: #1d1f21;
            text-decoration: none;
 
-           background-color: #06b6ef;
+           background-color: #46e4db;
            li {
              span.datelist {
-               color: white;
+              //  color: white;
              }
 
            }
@@ -427,7 +427,7 @@ html {
           // border-top: 1px solid #06b6ef;
           font-size: 1.6rem;
           font-family: $QuicksandMedium;  
-          color: white;
+          // color: white;
           list-style-type: none;
           // border: .1rem groove #06b6ef;
           // border-bottom: none;
@@ -444,7 +444,7 @@ html {
         }
 
         span.datelist {
-          color: #06b6ef;
+          // color: #06b6ef;
           text-align: right;
           font-size: 1.4rem;
           font-family: $QuicksandMedium;
@@ -469,7 +469,7 @@ html {
     font-size: 1.6rem;
     color: white;
     background-color: #343a40;
-    background-image: linear-gradient(90deg, #54b30e -1%, #06b6ef);
+    background-image: linear-gradient(90deg, #46e4db -1%, #1d1f21);
     padding: 15px;
     // box-shadow: 2px 2px 2px #343a40;
     margin: auto;
@@ -517,7 +517,7 @@ html {
       font-weight: 900;
       font-size: 25px;
       text-indent: 10px;
-      color: $textColor;
+      color: #1d1f21;
 
       &:hover {
         color: $textColor;
@@ -528,7 +528,7 @@ html {
   .footer-about {
     font-family: $QuicksandBold;
     font-size: 1.8rem;
-    color: $highlight;
+    color: #1d1f21;
     text-align: left;
     span {
       span {
