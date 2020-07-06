@@ -408,12 +408,15 @@ html {
         width: 80%;
         margin: auto;
         border-top: .02em groove #46e4db;
+        border-image: repeating-linear-gradient(160deg, #44ded5, #1c2b2b 100px) 360;;
         &:nth-child(odd) {
           border-top: .02em groove #46e4db;
+          border-image: repeating-linear-gradient(160deg, #44ded5, #1c2b2b 100px) 360;;
         }
 
         &:last-child {
           border-bottom: .02em groove #46e4db;
+          border-image: repeating-linear-gradient(160deg, #44ded5, #1c2b2b 100px) 360;;
         }
          &:hover {
            transition-property: text-align,
