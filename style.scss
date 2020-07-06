@@ -65,14 +65,8 @@ html {
   }
 
   a {
-    color: $highlight;
     text-decoration: none;
     cursor: pointer;
-
-    &:hover,
-    &:active {
-      color: $highlight;
-    }
   }
 
 
@@ -181,7 +175,7 @@ html {
   .topics {
     font-size: 1.8rem;
     font-family: $QuicksandBold;
-    color: $textColor;
+    color: #46e4db;
     text-decoration: none;
   }
 
@@ -352,7 +346,7 @@ html {
       padding: 12px 15px;
       color: #46e4db;
       font-family: $QuicksandBold;
-      border: .02em ridge #06b6ef;
+      border: .02em ridge #46e4db;
       border-right: none;
       &:last-child {
         border-right: .02em ridge #46e4db;
