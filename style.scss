@@ -173,6 +173,16 @@ html {
     }
   }
 
+  .article-footer {
+    padding: 0 50px 0 20px;
+    margin-bottom: 80px;
+
+    .tagged {
+      text-align: right;
+    }
+
+  }
+
   .topics {
     font-size: 1.8rem;
     font-family: $QuicksandBold;
@@ -337,14 +347,15 @@ html {
   }
 
   .navb {
-     display: flex;
-     line-height: 1;
-     align-items: flex-start;
-     justify-content: flex-end;  
+    display: flex;
+    /* line-height: 1; */
+    margin-top:10px;
+    align-items: flex-start;
+    justify-content: flex-end; 
 
     a {
       font-size: 1.6rem;
-      padding: 12px 15px;
+      padding: 6px 8px;
       color: #46e4db;
       font-family: $QuicksandBold;
       border: .02em ridge #46e4db;
@@ -510,7 +521,7 @@ html {
 
   .footer-links {
     text-align: right;
-    margin-right: 20px;
+    // margin-right: 20px;
 
     a {
       font-weight: 900;

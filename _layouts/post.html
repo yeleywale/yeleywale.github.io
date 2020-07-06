@@ -15,12 +15,12 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="row">
+  <div class="row article-footer">
     <div class="date col">
-      Written on <i class="far fa-calendar-alt"></i> {{ page.date | date: "%B %e, %Y" }}
+      Written on &nbsp; <i class="far fa-calendar-alt"> </i> {{ page.date | date: "%B %e, %Y" }}
     </div>
     
-    <div class="col">
+    <div class="col tagged">
       <span class="bottom-tags">
         {% for tag in page.tags %}
         {% capture tag_name %}{{ tag }}{% endcapture %}
