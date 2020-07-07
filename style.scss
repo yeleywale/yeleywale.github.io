@@ -185,7 +185,7 @@ html {
 
   .topics {
     font-size: 1.8rem;
-    font-family: $QuicksandMedium;
+    font-family: $QuicksandBold;
     color: #ffffff;
     text-decoration: none;
   }
@@ -276,8 +276,7 @@ html {
       padding: 6px;
       color: #46e4db;
       font-size: 1.4rem;
-      font-family: $QuicksandMedium;
-      letter-spacing: .5px;
+      font-family: $QuicksandBold;
 
       &:after {
         content: ".";
@@ -307,7 +306,7 @@ html {
     font-size: 30px;
     padding: 10px 10px 10px 0;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 
     a {
       color: #46e4db;
@@ -348,22 +347,20 @@ html {
   }
 
   .navb {
-    display: flex;
-    /* line-height: 1; */
-    margin-top:10px;
-    align-items: flex-start;
-    justify-content: flex-end; 
+     display: flex;
+     line-height: 1;
+     align-items: flex-start;
+     justify-content: flex-end;  
 
     a {
       font-size: 1.6rem;
-      letter-spacing: .5px;
-      padding: 6px 8px;
+      padding: 12px 15px;
       color: #46e4db;
-      font-family: $QuicksandMedium;
-      border: .02em groove #46e4db;
+      font-family: $QuicksandBold;
+      border: .02em ridge #46e4db;
       border-right: none;
       &:last-child {
-        border-right: .02em groove #46e4db;
+        border-right: .02em ridge #46e4db;
       } 
       &:active {
         background-color: #46e4db;
@@ -409,16 +406,13 @@ html {
         display: block;
         width: 80%;
         margin: auto;
-        border-top: .02em groove #46e4db;
-        border-image: repeating-linear-gradient(160deg, #44ded5, #1c2b2b 100px) 360;;
+        border-top: .02em ridge #46e4db;
         &:nth-child(odd) {
-          border-top: .02em groove #46e4db;
-          border-image: repeating-linear-gradient(160deg, #44ded5, #1c2b2b 100px) 360;;
+          border-top: .02em ridge #46e4db;
         }
 
         &:last-child {
-          border-bottom: .02em groove #46e4db;
-          border-image: repeating-linear-gradient(160deg, #44ded5, #1c2b2b 100px) 360;;
+          border-bottom: .02em ridge #46e4db;
         }
          &:hover {
            transition-property: text-align,
@@ -541,7 +535,7 @@ html {
   }
 
   .footer-about {
-    font-family: $QuicksandMedium;
+    font-family: $QuicksandBold;
     font-size: 1.8rem;
     color: #46e4db;
     text-align: left;
@@ -566,6 +560,7 @@ html {
 
     p {
       font-size: 1.8rem;
+      margin: 0 auto;
     }
 
     .entry {
@@ -840,7 +835,6 @@ html {
 
          p {
            font-size: 1.0rem;
-           margin: 0 auto;
          }
        }
      }
