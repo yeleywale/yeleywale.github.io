@@ -348,13 +348,12 @@ html {
 
   .navb {
      display: flex;
-     line-height: 1;
      align-items: flex-end;
      justify-content: flex-end;  
 
     a {
       font-size: 1.6rem;
-      padding: 12px 15px;
+      padding: 6px 8px;
       color: #46e4db;
       font-family: $QuicksandMedium;
       border: .02em groove #46e4db;
