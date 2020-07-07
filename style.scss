@@ -302,7 +302,7 @@ html {
   .site-name {
     margin: 0;
     cursor: pointer;
-    font-family: $QuicksandBold;
+    font-family: $QuicksandMedium;
     font-size: 30px;
     padding: 10px 10px 10px 0;
     text-transform: uppercase;
@@ -356,11 +356,11 @@ html {
       font-size: 1.6rem;
       padding: 12px 15px;
       color: #46e4db;
-      font-family: $QuicksandBold;
-      border: .02em ridge #46e4db;
+      font-family: $QuicksandMedium;
+      border: .02em groove #46e4db;
       border-right: none;
       &:last-child {
-        border-right: .02em ridge #46e4db;
+        border-right: .02em groove #46e4db;
       } 
       &:active {
         background-color: #46e4db;
@@ -406,13 +406,13 @@ html {
         display: block;
         width: 80%;
         margin: auto;
-        border-top: .02em ridge #46e4db;
+        border-top: .02em groove #46e4db;
         &:nth-child(odd) {
-          border-top: .02em ridge #46e4db;
+          border-top: .02em groove #46e4db;
         }
 
         &:last-child {
-          border-bottom: .02em ridge #46e4db;
+          border-bottom: .02em groove #46e4db;
         }
          &:hover {
            transition-property: text-align,
@@ -535,7 +535,7 @@ html {
   }
 
   .footer-about {
-    font-family: $QuicksandBold;
+    font-family: $QuicksandMedium;
     font-size: 1.8rem;
     color: #46e4db;
     text-align: left;
@@ -783,6 +783,7 @@ html {
        a {
          font-family: $QuicksandMedium;
          font-size: 1.0rem;
+         letter-spacing: .5px;
          padding: 0;
          line-height: 1;
          &::after {
