@@ -5,12 +5,13 @@ permalink: /about/
 published: true
 ---
 
-<img class="img_about" src="{{ site.baseurl }}/images/assets/aboutme.jpg" alt="aboutme_img"/>
-
-
- HI! :open_hands: I'm **Akinwale Alexander**. A software engineer, teacher, creative. I blog about software development with a particular focus on **Scala** and its ecosystem (including but not limited to **Akka-stream**, **Play framework**, **Kafka**), and a dash of functional programming(**ZIO**, **Cats-Effect**). All of which I have spent appreciable amount of time hacking and engineering software applications for a few companies in Nigeria. In my spare time, I like to contribute to **open source** projects; **read books** :books:, **blogs**, **papers**, etc, some of which has nothing to do with my discipline. I'm a huge sports enthusiast, It wouldn't be anything out of the ordinary to catch me on a matchday supporting **Chelsea F.C.** while they run rings around **Liverpool**, or biking :mountain_biking_man: on the sand dunes of the **Namib desert**. I'm a **gamer**, I'm currently accepting challenges for **Playstation Pro Evolution Soccer** :soccer:, fancy your chances?, send :rocket: me your gauntlet [here](https://alexakinwale.com), you can be sure I would pick it up.
+ HI! :open_hands: I'm **Akinwale 'Yele Alexander**. A software developer, teacher,. I blog about software development with a particular focus on **Scala** and its ecosystem (including but not limited to **Akka-stream**, **Play framework**, **Kafka**), and a dash of functional programming(**ZIO**, **Cats-Effect**). I have spent appreciable amount of time hacking and engineering software applications for a few companies in Nigeria. As a side hustle, I contribute to **open source** projects; work on personal projects, and connect with great people.
  
- I'm enthusiastic about **functional programming**. My primary language is, but not limited to, **Scala**(I have written tons of codes in **Java**, **JavaScript** and **C#** as well). I however understand that it would take some years for any drastic change to take place in the business world. Ergo, my **OOAD** techniques are still intact,and I still put them to good use when business imperatives trumps my predilection. 
+ I'm an avid fan of medieval epic fantasy novels in particular J.R.R Tolkien's Trilogy, The Lord of the Ring, and George R. R. Martin series, The Game of Thrones. It goes without saying that I love history and non-fiction history books as well.
+ 
+  I'm a huge sports enthusiast, It wouldn't be anything out of the ordinary to catch me on a matchday supporting **Chelsea F.C.** while they run rings around **Liverpool**, or biking :mountain_biking_man: on the sand dunes of the **Namib desert**. I'm a **gamer**, I'm currently accepting challenges for **Playstation Pro Evolution Soccer** :soccer:, fancy your chances?, send :rocket: me your gauntlet [here](https://alexakinwale.com), you can be sure I would pick it up.
+ 
+ I have gone from being a fan of **functional programming** to a reluctant adopter. My primary language is, but not limited to, **Scala**(I have written tons of codes in **Java**, **JavaScript** and **C#** as well). In my own opinion, it all boils down to great applications that are useful and commercially viable.
 
 ### My Motivation
 I'm motivated by **fear**. No task is ever huge for me. I don't see myself as talented, I see myself as someone who excels at a ridiculously sickening work ethic. The separation of talent and skill is something that I always try to come to terms with. No matter how talented one is, skills is talent that has been trained. So I keep honing my skill, and I would rather people see it as talent than for the talent to atrophy or be misused.
@@ -21,7 +22,7 @@ This is is the term I use to regain situation awareness. having a good knowledge
 
 ### Politics
 
-My political persuasion is **Nigerian** :nigeria:. Meaning that politics in any form may never benefit the populace. I swing between the left and right when it's logically convenient. I'm not a charlatan though, and I'm not liberal or conservative as well. I just have an **Occam's Razor** that I carry around, I call it **Yelism**.
+My political persuasion is **Nigerian** :nigeria:, if there's any such thing. Meaning that politics in any form may never benefit the populace. I swing between the left and right when it's logically convenient. I'm not a charlatan though, and I'm not liberal or conservative as well. I just have an **Occam's Razor** that I carry around, I call it **Yelism**.
 
 > My life goal is to get better everyday at judging and dealing with people. 
 > A talent for following the ways of yesterday is not sufficient to improve the world today
