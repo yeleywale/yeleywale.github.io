@@ -1,9 +1,23 @@
 ---
 layout: default
 ---
+<div class="" style=" width:20%; margin:auto; margin-bottom: 20px;">
 
-<div class="container col-lg-11 short-bio">
-  Hi! I am <strong>Akinwale Alexander &#x1F913;</strong>. A software craft person using <strong><a target="_blank" href="https://www.scala-lang.org/">Scala</a></strong> for fun and for profit. 
+
+</div>
+<div class="container">
+  <div class="short-bio">
+    <img class="img-thumbnail img" src="{{ site.baseurl }}/images/assets/self.png" alt="self">
+    <div class="short-bio-inner">
+      <p class="bio"><span style="font-size: 20px; font-weight: 700;">Hi!</span> I'm <em><strong>Akin 'Yele Alexander</strong></em>. I'm a
+      software developer. Welcome to my personal blog. Here I share personal insights in the field about concepts and programming technologies that pique my
+      interest. At the moment, my main interest areas are in Scala, Distributed Systems, Functional Programming, and sundry
+      overarching principles that make up the DNA of an aspiring force multiplier.</p>
+
+    <p class="feedback">I'm happy to receive your feedbacks here: <strong><em><a href="mailto:waleander@gmail.com">waleander@gmail.com</a></em></strong>   </p> 
+    <p class="socials">{% include svg-icons.html %}</p>
+    </div>
+  </div>
 </div>
 
 <div class="container">
@@ -13,38 +27,38 @@ layout: default
       {% for tag in site.data.tags %}
       <a href="/tags/{{ tag.name }}"> {{ tag.name | capitalize}} </a>
       {% endfor %}
-    
+
     </div>
   </div>
 </div>
 
-  <div class="posts container">
-    <!-- <h3>Recent Posts: </h3> -->
-    <ul>
-      {% for post in site.posts %}
-      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-      {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-      {% if posttime > nowunix %}
-      <a href="" class="container pending">
-      
-        <li class="row">
-      
-          <span class="datelist datelist-pending col-lg-3">Posting in <em>
+<div class="posts container">
+  <!-- <h3>Recent Posts: </h3> -->
+  <ul>
+    {% for post in site.posts %}
+    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+    {% if posttime > nowunix %}
+    <a href="" class="container pending">
+
+      <li class="row">
+
+        <span class="datelist datelist-pending col-lg-3">Posting in <em>
             {{ (posttime | minus: nowunix) | divided_by: 60 }} mins
           </em> </span>
-          <span class="col-lg-7 blog-title blog-title-pending">{{post.title}}</span>
-          </li>
-      </a>
-          {% else%}
-      <a href="{{ site.baseurl }}{{ post.url }}" class="container">
-        
-        <li class="row">     
-            <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
-            <span class="col-lg-9 blog-title">{{ post.title }}</span>
-        </li>
-      </a>
-      {% endif  %}
-      {% endfor %}
-    </ul>
-  
-  </div>
+        <span class="col-lg-7 blog-title blog-title-pending">{{post.title}}</span>
+      </li>
+    </a>
+    {% else%}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="container">
+
+      <li class="row">
+        <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>
+        <span class="col-lg-9 blog-title">{{ post.title }}</span>
+      </li>
+    </a>
+    {% endif  %}
+    {% endfor %}
+  </ul>
+
+</div>
