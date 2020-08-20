@@ -151,6 +151,9 @@ html {
     text-align: right;
   }
 
+  .img {
+  }
+
   /*********************/
 
   /* LAYOUT / SECTIONS */
@@ -266,7 +269,7 @@ html {
     margin: 80px auto 50px auto;
     div {
       span {
-        color: #46e4db;
+        color: white;
         padding: 5px 15px 5px 15px;
         font-style: italic;
       }
@@ -274,7 +277,7 @@ html {
 
     a {
       padding: 6px;
-      color: #46e4db;
+      color: white;
       font-size: 1.4rem;
       font-family: $QuicksandMedium;
 
@@ -309,7 +312,11 @@ html {
     letter-spacing: 1.5px;
 
     a {
-      color: #46e4db;
+      color: white;
+      svg {
+        color: #00ff7d;
+        padding-bottom: 5px;  
+      }
 
       &:hover {
         color: #fff;
@@ -348,26 +355,20 @@ html {
 
   .navb {
      display: flex;
-     align-items: flex-end;
+     align-items: center;
      justify-content: flex-end;  
 
     a {
       font-size: 1.6rem;
-      padding: 6px 8px;
-      color: #46e4db;
+      padding: 0 15px;
+      color: #00ff7d;
       font-family: $QuicksandMedium;
-      border: .02em groove #46e4db;
-      border-right: none;
-      &:last-child {
-        border-right: .02em groove #46e4db;
-      } 
       &:active {
         background-color: #46e4db;
       }
       &:hover {
-        color: #1d1f21;
+        color: white;
         text-decoration: none;
-        background: #46e4db;
       }
 
     }
@@ -448,11 +449,12 @@ html {
             text-align: left;
             padding: 0.5em 2em 0.5em 1em;
             flex-grow: 4;
+            color: white;
           }
         }
 
         span.datelist {
-          // color: #06b6ef;
+          color: white;
           text-align: right;
           font-size: 1.4rem;
           font-family: $QuicksandMedium;
@@ -474,13 +476,42 @@ html {
   }
 
   .short-bio {
+    display:flex ;
+    flex-direction: row;
+
     font-size: 1.6rem;
     color: white;
     background-color: #343a40;
-    background-image: linear-gradient(90deg, #46e4db -1%, #1d1f21);
-    padding: 15px;
+    background-image: url("./images/assets/background.jpg");
+    // background-image: linear-gradient(90deg, #46e4db -1%, #1d1f21);
+    // padding: 2px;
     // box-shadow: 2px 2px 2px #343a40;
-    margin: auto;
+    background-blend-mode: multiply;
+        margin: auto;
+    .short-bio-inner {
+      padding-right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      // margin-top : 20px;
+      color: #00ff7d;
+      .bio {
+        // flex-grow: 2;
+      }
+      .socials {
+        flex-grow: 1;
+        margin: 0;
+      }
+      .feedback {
+        margin: 0;
+        flex-grow: 2;
+      }
+    }
+
+    img {
+      margin-right: 10px;
+      height: 180px;
+      width: 150px;
+    }
   }
 
   .post {
@@ -523,12 +554,12 @@ html {
 
     a {
       font-weight: 900;
-      font-size: 25px;
       text-indent: 10px;
-      color: #46e4db;
+      color: white;
+      
 
       &:hover {
-        color: $textColor;
+        color: #46e4db;
       }
     }
   }
@@ -537,7 +568,7 @@ html {
     font-family: $QuicksandMedium;
     font-size: 1.8rem;
     color: #46e4db;
-    text-align: left;
+    text-align: center;
     span {
       span {
         color: white;
@@ -548,7 +579,7 @@ html {
 
   .post {
     h1 {
-      color: #46e4db;
+      color: #00ff7d;
       margin-bottom: 60px;
       margin-top: 120px;
       text-align: center;
@@ -571,9 +602,9 @@ html {
       }
 
       blockquote {
-        border-left: 1px solid $highlight;
+        border-left: 1px solid #00ff7d;
         p {
-          color: $highlight;
+          color: #00ff7d;
         }
       }
       
@@ -593,10 +624,19 @@ html {
     color: $textColor;
     margin-top: 80px;
 
+    p {
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 4.0rem;
+      margin-bottom: 30px;
+    }
+
     h1,
     h2,
     h3 {
-      color: $highlight;
+      color: #00ff7d;
     }
 
     h2 {
@@ -608,11 +648,12 @@ html {
     }
 
     h3 {
-      font-size: 30px;
+      font-size: 3.5rem;
+      margin-top: 50px;
     }
 
     strong {
-      color: $highlight;
+      color: #00ff7d;
     }
 
     .img_about {
@@ -673,7 +714,7 @@ html {
       .site-name {
         margin: 0;
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 2rem;
         letter-spacing: .5px;
         padding: 10px 10px 10px 10px;
       }
