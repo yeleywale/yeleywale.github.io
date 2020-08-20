@@ -15,15 +15,15 @@ layout: default
       overarching principles that make up the DNA of an aspiring force multiplier.</p>
 
     <p class="feedback">I'm happy to receive your feedbacks here: <strong><em><a href="mailto:waleander@gmail.com">waleander@gmail.com</a></em></strong>   </p> 
-    <p class="socials">{% include svg-icons.html %}</p>
-    </div>
+    {% include svg-icons.html %} 
+      </div>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
     <div class=" container tags col-lg-8 col-lg-offset-4">
-      <span class="topics">Topics:</span>
+      <span class="topics">Topics: </span> &NonBreakingSpace;
       {% for tag in site.data.tags %}
       <a href="/tags/{{ tag.name }}"> {{ tag.name | capitalize}} </a>
       {% endfor %}
