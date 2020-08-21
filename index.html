@@ -40,10 +40,10 @@ layout: default
 
       <li class="row">
 
-        <span class="datelist datelist-pending col-lg-3 col-2">Posting in <em>
+        <span class="datelist datelist-pending col-lg-3">Posting in <em>
             {{ (posttime | minus: nowunix) | divided_by: 60 }} mins
           </em> </span>
-        <span class="col-lg-7 col-10 blog-title blog-title-pending">{{post.title}}</span>
+        <span class="col-lg-9 blog-title blog-title-pending">{{post.title}}</span>
       </li>
     </a>
     {% else%}
