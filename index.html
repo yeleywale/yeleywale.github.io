@@ -19,7 +19,7 @@ layout: default
 
 <div class="container">
   <div class="row">
-    <div class=" container tags col-lg-8 col-lg-offset-4">
+    <div class=" container tags col-12 col-lg-8 col-lg-offset-4">
       <span class="topics">Topics: </span> &NonBreakingSpace;
       {% for tag in site.data.tags %}
       <a href="/tags/{{ tag.name }}"> {{ tag.name | capitalize}} </a>
@@ -36,18 +36,18 @@ layout: default
     {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
     {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
     {% if posttime > nowunix %}
-    <a href="" class="container pending">
+    <a href="" class="pending">
 
       <li class="row">
 
-        <span class="datelist datelist-pending col-lg-3">Posting in <em>
+        <span class="datelist datelist-pending col-lg-3 col-2">Posting in <em>
             {{ (posttime | minus: nowunix) | divided_by: 60 }} mins
           </em> </span>
-        <span class="col-lg-7 blog-title blog-title-pending">{{post.title}}</span>
+        <span class="col-lg-7 col-10 blog-title blog-title-pending">{{post.title}}</span>
       </li>
     </a>
     {% else%}
-    <a href="{{ site.baseurl }}{{ post.url }}" class="container">
+    <a href="{{ site.baseurl }}{{ post.url }}" class="">
 
       <li class="row">
         <span class="datelist col-lg-3">{{ post.date | date: "%B %e, %Y" }}</span>

@@ -885,7 +885,8 @@ html {
          font-family: $QuicksandMedium;
          font-size: 1.0rem;
          letter-spacing: .5px;
-         padding: 0;
+         margin: auto;
+         padding: 3px;
          line-height: 1;
          &::after {
            content: ".";
@@ -899,6 +900,7 @@ html {
        ul {
          a {
            padding-bottom: 10px;
+           width: 100%;
            li.row {
             //  flex-direction: row-reverse;
              flex-wrap: wrap;
@@ -959,10 +961,12 @@ html {
         .site-info {
           .site-name {
             margin: 0;
-            font-weight: 400;
-            font-size: 1.4rem;
-            letter-spacing: .5px;
-            padding: 10px 8px 10px 8px;
+            // padding: 10px 8px 10px 8px;
+            a {
+              font-weight: 500;
+              font-size: 1.6rem;
+              letter-spacing: .5px;
+            }
           }
         }
 
@@ -1071,7 +1075,9 @@ html {
        justify-content: center;
        .site-info {
          .site-name {
-           font-size: 1.0rem;
+           a {
+             font-size: 1.2rem;
+           }
          }
        }
        .navb {
@@ -1086,10 +1092,16 @@ html {
 
      div.short-bio {
        font-size: 0.8rem;
+
+       .short-bio-inner {
+         p {
+           font-size: 1.2rem;
+         }
+       }
      }
 
      div.tags {
-       margin-left: 20px;
+       margin-left: 5px;
        .topics {
          font-size: 1.0rem;
        }
@@ -1121,10 +1133,16 @@ html {
      }
      .post {
        h1 {
-         font-size: 2.4rem;
+         font-size: 1.6rem;
          text-align: left;
          margin-top: 40px;
          margin-bottom: 30px;
+       }
+       h2 {
+        font-size: 1.4rem;
+       }
+       p {
+         font-size: 1.2rem;
        }
        .entry {
         //  font-size: 1rem;
@@ -1151,7 +1169,25 @@ html {
        }
 
        .bottom-tags {
-         font-size: 0.8rem;
+         a {
+           font-size: 0.8rem;
+         }
+       }
+     }
+
+     .page {
+       text-align: left;
+       h1 {
+         font-size: 1.6rem;
+       }
+       h2 {
+         font-size: 1.4rem;
+       }
+       h3{
+         font-size: 1.4rem;
+       }
+       p {
+         font-size: 1.2rem;
        }
      }
 
