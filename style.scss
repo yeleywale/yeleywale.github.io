@@ -59,7 +59,7 @@ html {
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin: 15px 0;
     font-family: $Quicksand;
   }
@@ -278,7 +278,7 @@ html {
 
     a {
       padding: 6px;
-      color: #00ff7d;
+      color: #3db176;
       font-family: $QuicksandMedium;
 
       &:after {
@@ -314,6 +314,9 @@ html {
     a {
       color: white;
       font-size: 2.8rem;
+      &:hover {
+            text-shadow: 0px 0px 2px white;
+      }
       svg {
         color: #00ff7d;
         padding-bottom: 5px;  
@@ -355,6 +358,13 @@ html {
   }
 
   .navb {
+    span {
+      color: white;
+      font-stretch: ultra-expanded;
+      font-weight: 900;
+      text-shadow: 0px 0px 2px white;
+
+    }
      display: flex;
      align-items: center;
      justify-content: flex-end;  
@@ -407,13 +417,13 @@ html {
         display: block;
         width: 80%;
         margin: auto;
-        border-top: .02em groove #00ff7d;
+        border-top: .02em groove #3db176;
         &:nth-child(odd) {
-          border-top: .02em groove #00ff7d;
+          border-top: .02em groove #3db176;
         }
 
         &:last-child {
-          border-bottom: .02em groove #00ff7d;
+          border-bottom: .02em groove #3db176;
         }
          &:hover {
            transition-property: text-align,
@@ -422,13 +432,7 @@ html {
            transition-delay: 0.1s;
            color: white;
            text-decoration: none;
-           background-color: #00ff7d;
-           li {
-             span.datelist {
-              //  color: white;
-             }
-
-           }
+           background-color: #3db176;
          }
         
 
@@ -574,6 +578,9 @@ html {
     color: white;
     text-align: center;
       span {
+        span {
+          color: #3db176;
+        }
         color: #00ff7d;
         font-family: $QuicksandBold;
       }
@@ -591,8 +598,7 @@ html {
     }
 
     p {
-      font-size: 1.8rem;
-      margin: 10px auto 20px auto;
+       margin: 10px auto 20px auto;
       line-height: 1.4;
     }
 
