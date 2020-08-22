@@ -178,7 +178,7 @@ html {
   }
 
   .article-footer {
-    padding: 0 50px 0 20px;
+    padding: 0 0 0 0;
     margin-bottom: 80px;
 
     .tagged {
@@ -1064,9 +1064,18 @@ html {
         }
       }
 
-      .date{
-        font-size: small;
+      .article-footer {
+         padding: 0 0 0 0;
+        .date{
+          font-size: 0.6rem;
+        }
+        .bottom-tags {
+          a {
+            font-size: 0.6rem;
+          }
+        }
       }
+
    }
 
    @media screen and (max-width: 400px) {
