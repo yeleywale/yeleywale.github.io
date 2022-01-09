@@ -82,3 +82,5 @@ encoding: utf-8
 show_drafts: true
 
 
+
+theme: jekyll-theme-cayman
